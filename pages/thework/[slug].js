@@ -13,6 +13,14 @@ export async function getStaticPaths() {
     return { paths, fallback: false }
 }
 
+export async function getStaticProps({ params }) {
+    return {
+        props: {
+            work: works.find(item => item.slug.toString() === params.slug)
+        }
+    }
+}
+
 const WorkItem= () => {
     const router = useRouter();
     const {slug} = router.query;
