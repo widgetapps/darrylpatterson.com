@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Link from 'next/link';
 let works = require('../../data/work.json');
 
