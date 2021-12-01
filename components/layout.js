@@ -31,8 +31,10 @@ export default function Layout({ children }) {
         activeNav = '/thelist';
     } else if (router.pathname.startsWith('/contact')) {
         activeNav = '/contact';
-    } else {
+    } else if (router.pathname === '/') {
         activeNav = '/';
+    } else {
+        activeNav = '';
     }
 
     return (
@@ -113,15 +115,24 @@ export default function Layout({ children }) {
                 <div className="py-10">
                     <main>
                         <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                            {/* Replace with your content */}
                             {children}
-                            {/* /End replace */}
                         </div>
                     </main>
                 </div>
+
+                <div className="py-10">
+                    <footer className='space-y-3'>
+                        <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 text-center text-sm">
+                            &copy; {(new Date().getFullYear())} Patterson Powered Ltd.
+                        </div>
+                        <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 text-center text-xs">
+                            <Link href='https://github.com/widgetapps/darrylpatterson.com'>The code</Link> licensed under an <Link href='/license'>MIT License</Link>
+                        </div>
+                    </footer>
+                </div>
+
             </div>
 
-            <div>Footer</div>
         </>
     )
 }

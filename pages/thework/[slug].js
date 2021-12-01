@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 
 let works = require('../../data/work.json');
 
-// Called by server side build to setup dymanic routes.
+// Called by server side build to setup dynamic routes.
 export async function getStaticPaths() {
     const paths = works.map((work) => ({
         params: { slug: work.slug }
