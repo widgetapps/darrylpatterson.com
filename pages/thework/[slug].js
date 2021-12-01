@@ -2,6 +2,17 @@ import { useRouter } from 'next/router'
 
 let works = require('../../data/work.json');
 
+export async function getStaticPaths() {
+
+    const paths = works.map((work) => ({
+        params: { slug: work.slug }
+    }))
+
+    // fallback: false means pages that don’t have the
+    // correct id will 404.
+    return { paths, fallback: false }
+}
+
 const WorkItem= () => {
     const router = useRouter();
     const {slug} = router.query;
