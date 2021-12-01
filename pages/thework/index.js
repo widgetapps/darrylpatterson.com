@@ -5,7 +5,7 @@ export default function Work() {
     return (
         <div>
             {works.map(work =>
-                <Link href={`/thework/${work.slug}`}><a>{work.title}</a></Link>
+                <Link href={`/thework/${work.slug}`}>{work.title}</Link>
             )}
         </div>
     )
