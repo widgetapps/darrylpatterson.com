@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 
 let works = require('../../data/work.json');
 
-const Work = () => {
+const WorkItem= () => {
     const router = useRouter();
     const {slug} = router.query;
     const work = works.find(item => item.slug.toString() === slug);
@@ -10,4 +10,4 @@ const Work = () => {
     return <p>Post: {work.title}</p>
 }
 
-export default Work
+export default WorkItem
