@@ -12,7 +12,7 @@ import {act} from "react-dom/test-utils";
 let activeNav = '';
 
 const navigation = [
-    { name: 'Home', href: '/' },
+    { name: 'The Person', href: '/' },
     { name: 'The Work', href: '/thework' },
     { name: 'The List', href: '/thelist' },
     { name: 'Contact', href: '/contact' },

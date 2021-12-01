@@ -1,7 +1,9 @@
 
 export default function License() {
     return (
-        <div>
+        <div className="space-y-6">
+            <h1 className="text-2xl">MIT License</h1>
+
             <p>Copyright {(new Date().getFullYear())} Patterson Powered Ltd.</p>
 
             <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
