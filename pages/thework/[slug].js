@@ -7,7 +7,7 @@ const WorkItem= () => {
     const {slug} = router.query;
     const work = works.find(item => item.slug.toString() === slug);
 
-    return <p>Post: {work.title}</p>
+    return <p>Post title: {work.title}</p>
 }
 
 export default WorkItem
