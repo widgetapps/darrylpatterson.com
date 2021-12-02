@@ -87,7 +87,6 @@ export default function List() {
     const [filteredItems, setFilteredItems] = useState(listItems);
 
     function applyFilter(type, e) {
-        console.log(type);
         switch (type) {
             case 'all':
                 setFilteredItems(listItems);
