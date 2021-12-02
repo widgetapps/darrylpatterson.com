@@ -31,7 +31,7 @@ const bgColors = {
     'edu': 'blue-800',
     'finance': 'lime-800',
     'ent': 'emerald-800',
-    'tech': 'cyan-80',
+    'tech': 'cyan-800',
     'gov': 'violet-800'
 }
 
