@@ -49,7 +49,7 @@ class ListItem extends React.Component {
                 )}
                     >
                     {
-                        React.createElement(icons[listItem.type], {className: `h-5 w-5 text-${bgColors[listItem.type]}`})
+                        React.createElement(icons[listItem.type], {className: `h-5 w-5 text-gray-700`})
                     }
                 </div>
                 <div className="flex-1 flex items-center justify-between border-t border-r border-b border-gray-200 bg-white rounded-r-md truncate">

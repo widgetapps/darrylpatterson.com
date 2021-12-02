@@ -59,30 +59,16 @@ const filters = [
         'color': 'cyan-800'
     },
     {
-        'type': 'edu',
-        'position': 'middle',
-        'display': 'Education',
-        'icon': AcademicCapIcon,
-        'color': 'blue-800'
-    },
-    {
         'type': 'gov',
         'position': 'middle',
-        'display': 'Government',
+        'display': 'Government & Education',
         'icon': LibraryIcon,
         'color': 'violet-800'
     },
     {
-        'type': 'nfp',
-        'position': 'middle',
-        'display': 'NFP',
-        'icon': GlobeIcon,
-        'color': 'fuchsia-800'
-    },
-    {
         'type': 'other',
         'position': 'last',
-        'display': 'Other',
+        'display': 'And More',
         'icon': CubeIcon,
         'color': 'rose-800'
     }
@@ -95,6 +81,7 @@ function classNames(...classes) {
 export default function List() {
 
     const [filteredItems, setFilteredItems] = useState(listItems);
+    const [activeFilter, setActiveFilter] = useState(filters.find(filter => filter.type.toString() === 'all'));
 
     function applyFilter(type, e) {
         switch (type) {
@@ -104,30 +91,31 @@ export default function List() {
             default:
                 setFilteredItems(listItems.filter(item => item.type === type));
         }
+        setActiveFilter(filters.find(filter => filter.type.toString() === type));
     }
 
     return (
         <div>
-            <div className="flex">
-                <span className="relative z-0 inline-flex shadow-sm rounded-md">
-                    {filters.map(filter =>
-                        <button
-                            type="button"
-                            onClick={(e) => applyFilter(filter.type, e)}
-                            className={classNames(
-                                filter.position === 'first'
-                                    ? 'rounded-l-md'
-                                    : filter.position === 'last'
-                                ? ' rounded-r-md'
-                                : '',
-                                `-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-${filter.color} hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500`
-                            )}>
-                            {React.createElement(filter.icon, {className: `-ml-0.5 mr-0 lg:mr-1.5 h-5 w-5`})}
-                            <span className="hidden lg:block text-gray-700">{filter.display}</span>
-                        </button>
-                    )}
-                </span>
-            </div>
+            <span className="relative z-0 inline-flex shadow-sm rounded-md">
+                {filters.map(filter =>
+                    <button
+                        type="button"
+                        onClick={(e) => applyFilter(filter.type, e)}
+                        className={classNames(
+                            filter.position === 'first'
+                                ? 'rounded-l-md'
+                                : filter.position === 'last'
+                            ? ' rounded-r-md'
+                            : '',
+                            `-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500`
+                        )}>
+                        {React.createElement(filter.icon, {className: `-ml-0.5 mr-0 lg:mr-1.5 h-5 w-5`})}
+                        <span className="hidden lg:block text-gray-700">{filter.display}</span>
+                    </button>
+                )}
+            </span>
+
+            <div>Viewing: {activeFilter.display}</div>
             <ul role="list" className="mt-3 grid grid-cols-1 gap-5 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {filteredItems.map(listItem =>
                     <ListItem listItem={listItem}/>

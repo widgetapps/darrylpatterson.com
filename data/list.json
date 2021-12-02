@@ -471,49 +471,49 @@
   {
     "id": 68,
     "company": "Camp Ooch",
-    "type": "nfp",
+    "type": "other",
     "role": "UX Design",
     "job": "Job"
   },
   {
     "id": 69,
     "company": "HotDocs",
-    "type": "nfp",
+    "type": "other",
     "role": "UX Design & Engineering",
     "job": "Job"
   },
   {
     "id": 70,
     "company": "Salvation Army",
-    "type": "nfp",
+    "type": "other",
     "role": "UX Design",
     "job": "Job"
   },
   {
     "id": 71,
     "company": "Winning Charities International",
-    "type": "nfp",
+    "type": "other",
     "role": "UX Design",
     "job": "Job"
   },
   {
     "id": 72,
     "company": "World Vision",
-    "type": "nfp",
+    "type": "other",
     "role": "UX Design",
     "job": "Job"
   },
   {
     "id": 73,
     "company": "Karma CoOp",
-    "type": "nfp",
+    "type": "other",
     "role": "UX Design & Engineering",
     "job": "Job"
   },
   {
     "id": 74,
     "company": "Virgin Unite",
-    "type": "nfp",
+    "type": "other",
     "role": "UX Design",
     "job": "Job"
   },
@@ -576,28 +576,28 @@
   {
     "id": 84,
     "company": "George Brown College",
-    "type": "edu",
+    "type": "gov",
     "role": "User Research",
     "job": "Job"
   },
   {
     "id": 85,
     "company": "Humber College",
-    "type": "edu",
+    "type": "gov",
     "role": "UX Design",
     "job": "Job"
   },
   {
     "id": 86,
     "company": "Centennial College",
-    "type": "edu",
+    "type": "gov",
     "role": "UX Design & Engineering",
     "job": "Job"
   },
   {
     "id": 87,
     "company": "MadCap Adventures",
-    "type": "edu",
+    "type": "gov",
     "role": "UX Design & Gamification",
     "job": "Job"
   },
@@ -749,7 +749,7 @@
     "job": "Job"
   },
   {
-    "id": 108,
+    "id": 135,
     "company": "The Ex",
     "type": "ent",
     "role": "Digital Lead",
