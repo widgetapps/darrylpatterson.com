@@ -20,61 +20,71 @@ const filters = [
         'type': 'all',
         'position': 'first',
         'display': 'All',
-        'icon': ViewGridIcon
+        'icon': ViewGridIcon,
+        'color': 'gray-800'
     },
     {
         'type': 'agency',
         'position': 'middle',
         'display': 'Agency',
-        'icon': OfficeBuildingIcon
+        'icon': OfficeBuildingIcon,
+        'color': 'red-800'
     },
     {
         'type': 'brand',
         'position': 'middle',
         'display': 'Brand',
-        'icon': ColorSwatchIcon
+        'icon': ColorSwatchIcon,
+        'color': 'amber-800'
     },
     {
         'type': 'finance',
         'position': 'middle',
         'display': 'Finance',
-        'icon': CurrencyDollarIcon
+        'icon': CurrencyDollarIcon,
+        'color': 'lime-800'
     },
     {
         'type': 'ent',
         'position': 'middle',
         'display': 'Entertainment',
-        'icon': FilmIcon
+        'icon': FilmIcon,
+        'color': 'emerald-800'
     },
     {
         'type': 'tech',
         'position': 'middle',
         'display': 'Technology',
-        'icon': ChipIcon
+        'icon': ChipIcon,
+        'color': 'cyan-800'
     },
     {
         'type': 'edu',
         'position': 'middle',
         'display': 'Education',
-        'icon': AcademicCapIcon
+        'icon': AcademicCapIcon,
+        'color': 'blue-800'
     },
     {
         'type': 'gov',
         'position': 'middle',
         'display': 'Government',
-        'icon': LibraryIcon
+        'icon': LibraryIcon,
+        'color': 'violet-800'
     },
     {
         'type': 'nfp',
         'position': 'middle',
         'display': 'NFP',
-        'icon': GlobeIcon
+        'icon': GlobeIcon,
+        'color': 'fuchsia-800'
     },
     {
         'type': 'other',
         'position': 'last',
         'display': 'Other',
-        'icon': CubeIcon
+        'icon': CubeIcon,
+        'color': 'rose-800'
     }
 ];
 
@@ -110,10 +120,10 @@ export default function List() {
                                     : filter.position === 'last'
                                 ? ' rounded-r-md'
                                 : '',
-                                '-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500'
+                                `-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-${filter.color} hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500`
                             )}>
-                            {React.createElement(filter.icon, {className: '-ml-0.5 mr-0 lg:mr-1.5 h-5 w-5 text-indigo-400'})}
-                            <span className="hidden lg:block">{filter.display}</span>
+                            {React.createElement(filter.icon, {className: `-ml-0.5 mr-0 lg:mr-1.5 h-5 w-5`})}
+                            <span className="hidden lg:block text-gray-700">{filter.display}</span>
                         </button>
                     )}
                 </span>
