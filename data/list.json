@@ -520,56 +520,56 @@
   {
     "id": 75,
     "company": "Canada Savings Bond",
-    "type": "nfp",
+    "type": "gov",
     "role": "Digital Lead",
     "job": "Job"
   },
   {
     "id": 76,
     "company": "CIO Of Canada",
-    "type": "nfp",
+    "type": "gov",
     "role": "Engineering",
     "job": "Job"
   },
   {
     "id": 78,
     "company": "Financial Consumer Agency of Canada",
-    "type": "nfp",
+    "type": "gov",
     "role": "UX Design",
     "job": "Job"
   },
   {
     "id": 79,
     "company": "LCBO",
-    "type": "nfp",
+    "type": "gov",
     "role": "UX Design & Prototyping",
     "job": "Job"
   },
   {
     "id": 80,
     "company": "OLG",
-    "type": "nfp",
+    "type": "gov",
     "role": "UX Design",
     "job": "Job"
   },
   {
     "id": 81,
     "company": "YTV",
-    "type": "nfp",
+    "type": "gov",
     "role": "UX Design & Gamification",
     "job": "Job"
   },
   {
     "id": 82,
     "company": "TVO",
-    "type": "nfp",
+    "type": "gov",
     "role": "UX Design & Gamification",
     "job": "Job"
   },
   {
     "id": 83,
     "company": "Central Counties",
-    "type": "nfp",
+    "type": "gov",
     "role": "UX Design",
     "job": "Job"
   },

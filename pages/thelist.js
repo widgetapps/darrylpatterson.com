@@ -1,21 +1,127 @@
-let listItems = require('../data/list.json');
+import ListItem from '../components/listitem';
+import {
+    AcademicCapIcon,
+    ChipIcon,
+    FilmIcon,
+    CurrencyDollarIcon,
+    LibraryIcon,
+    OfficeBuildingIcon,
+    ColorSwatchIcon,
+    GlobeIcon,
+    CubeIcon,
+    ViewGridIcon
+} from "@heroicons/react/solid";
+import React, { useState } from "react";
+
+const listItems = require('../data/list.json');
+
+const filters = [
+    {
+        'type': 'all',
+        'position': 'first',
+        'display': 'All',
+        'icon': ViewGridIcon
+    },
+    {
+        'type': 'agency',
+        'position': 'middle',
+        'display': 'Agency',
+        'icon': OfficeBuildingIcon
+    },
+    {
+        'type': 'brand',
+        'position': 'middle',
+        'display': 'Brand',
+        'icon': ColorSwatchIcon
+    },
+    {
+        'type': 'finance',
+        'position': 'middle',
+        'display': 'Finance',
+        'icon': CurrencyDollarIcon
+    },
+    {
+        'type': 'ent',
+        'position': 'middle',
+        'display': 'Entertainment',
+        'icon': FilmIcon
+    },
+    {
+        'type': 'tech',
+        'position': 'middle',
+        'display': 'Technology',
+        'icon': ChipIcon
+    },
+    {
+        'type': 'edu',
+        'position': 'middle',
+        'display': 'Education',
+        'icon': AcademicCapIcon
+    },
+    {
+        'type': 'gov',
+        'position': 'middle',
+        'display': 'Government',
+        'icon': LibraryIcon
+    },
+    {
+        'type': 'nfp',
+        'position': 'middle',
+        'display': 'NFP',
+        'icon': GlobeIcon
+    },
+    {
+        'type': 'other',
+        'position': 'last',
+        'display': 'Other',
+        'icon': CubeIcon
+    }
+];
+
+function classNames(...classes) {
+    return classes.filter(Boolean).join(' ');
+}
 
 export default function List() {
+
+    const [filteredItems, setFilteredItems] = useState(listItems);
+
+    function applyFilter(type, e) {
+        console.log(type);
+        switch (type) {
+            case 'all':
+                setFilteredItems(listItems);
+                break;
+            default:
+                setFilteredItems(listItems.filter(item => item.type === type));
+        }
+    }
+
     return (
         <div>
+            <div className="flex">
+                <span className="relative z-0 inline-flex shadow-sm rounded-md">
+                    {filters.map(filter =>
+                        <button
+                            type="button"
+                            onClick={(e) => applyFilter(filter.type, e)}
+                            className={classNames(
+                                filter.position === 'first'
+                                    ? 'rounded-l-md'
+                                    : filter.position === 'last'
+                                ? ' rounded-r-md'
+                                : '',
+                                '-ml-px relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500'
+                            )}>
+                            {React.createElement(filter.icon, {className: '-ml-0.5 mr-0 lg:mr-1.5 h-5 w-5 text-indigo-400'})}
+                            <span className="hidden lg:block">{filter.display}</span>
+                        </button>
+                    )}
+                </span>
+            </div>
             <ul role="list" className="mt-3 grid grid-cols-1 gap-5 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                {listItems.map(listItem =>
-                    <li key={listItem.id} className="col-span-1 flex shadow-sm rounded-md">
-                        <div className="bg-logo flex-shrink-0 flex items-center justify-center w-16 text-white text-sm font-medium rounded-l-md">
-                            ICO
-                        </div>
-                        <div className="flex-1 flex items-center justify-between border-t border-r border-b border-gray-200 bg-white rounded-r-md truncate">
-                            <div className="flex-1 px-4 py-2 text-sm truncate">
-                                <p className="text-gray-900 font-medium hover:text-gray-600">{listItem.company}</p>
-                                <p className="text-gray-500">{listItem.role}</p>
-                            </div>
-                        </div>
-                    </li>
+                {filteredItems.map(listItem =>
+                    <ListItem listItem={listItem}/>
                 )}
             </ul>
         </div>
