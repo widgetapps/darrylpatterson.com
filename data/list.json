@@ -1,6 +1,940 @@
 [
   {
     "id": 1,
-    "title": "The title"
+    "company": "Allard Johnson",
+    "type": "agency",
+    "role": "VP Digital",
+    "job": "Job"
+  },
+  {
+    "id": 2,
+    "company": "BBDO",
+    "type": "agency",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 3,
+    "company": "Colourfield",
+    "type": "agency",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 4,
+    "company": "Cossette",
+    "type": "agency",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 5,
+    "company": "DentsuBos",
+    "type": "agency",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 6,
+    "company": "Devlin",
+    "type": "agency",
+    "role": "General Manager",
+    "job": "Job"
+  },
+  {
+    "id": 7,
+    "company": "Elvis Communications",
+    "type": "agency",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 8,
+    "company": "Euro RSCG 4",
+    "type": "agency",
+    "role": "VP Digital",
+    "job": "Job"
+  },
+  {
+    "id": 9,
+    "company": "Grip",
+    "type": "agency",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 10,
+    "company": "Hydrogen Creative",
+    "type": "agency",
+    "role": "VP Technology",
+    "job": "Job"
+  },
+  {
+    "id": 11,
+    "company": "Intersect",
+    "type": "agency",
+    "role": "UX Product Design",
+    "job": "Job"
+  },
+  {
+    "id": 12,
+    "company": "Lollipop",
+    "type": "agency",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 13,
+    "company": "Lush",
+    "type": "agency",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 14,
+    "company": "McLaren McCann",
+    "type": "agency",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 15,
+    "company": "Mixed Media",
+    "type": "agency",
+    "role": "Technical Director",
+    "job": "Job"
+  },
+  {
+    "id": 16,
+    "company": "Ogilvy",
+    "type": "agency",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 17,
+    "company": "Pixel Pusher",
+    "type": "agency",
+    "role": "UX Design & Gamification",
+    "job": "Job"
+  },
+  {
+    "id": 18,
+    "company": "Proximity",
+    "type": "agency",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 19,
+    "company": "Quiller and Blake",
+    "type": "agency",
+    "role": "UX Design & Technology",
+    "job": "Job"
+  },
+  {
+    "id": 20,
+    "company": "Sapient Nitro",
+    "type": "agency",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 21,
+    "company": "Saatchi and Saatchi",
+    "type": "agency",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 22,
+    "company": "Secret Location",
+    "type": "agency",
+    "role": "UX Design & Gamification",
+    "job": "Job"
+  },
+  {
+    "id": 23,
+    "company": "Sharpe Blackmore",
+    "type": "agency",
+    "role": "VP Digital",
+    "job": "Job"
+  },
+  {
+    "id": 24,
+    "company": "Transcontinental",
+    "type": "agency",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 25,
+    "company": "Astro Yogurt",
+    "type": "brand",
+    "role": "Gamification",
+    "job": "Job"
+  },
+  {
+    "id": 26,
+    "company": "Budweiser",
+    "type": "brand",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 27,
+    "company": "Chevrolet",
+    "type": "brand",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 28,
+    "company": "CamAm",
+    "type": "brand",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 29,
+    "company": "Clearasil",
+    "type": "brand",
+    "role": "Digital Lead",
+    "job": "Job"
+  },
+  {
+    "id": 30,
+    "company": "Crown Royal",
+    "type": "brand",
+    "role": "Tech Lead",
+    "job": "Job"
+  },
+  {
+    "id": 31,
+    "company": "Dove",
+    "type": "brand",
+    "role": "UX Design & Gamification",
+    "job": "Job"
+  },
+  {
+    "id": 32,
+    "company": "Evian",
+    "type": "brand",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 33,
+    "company": "GM",
+    "type": "brand",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 34,
+    "company": "Guinness",
+    "type": "brand",
+    "role": "Tech Lead",
+    "job": "Job"
+  },
+  {
+    "id": 35,
+    "company": "Heineken",
+    "type": "brand",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 36,
+    "company": "Huggies",
+    "type": "brand",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 37,
+    "company": "Johnny Walker",
+    "type": "brand",
+    "role": "Tech Lead",
+    "job": "Job"
+  },
+  {
+    "id": 38,
+    "company": "Kraft",
+    "type": "brand",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 39,
+    "company": "Lexus",
+    "type": "brand",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 40,
+    "company": "Magnum Ice Cream",
+    "type": "brand",
+    "role": "UX Design & Gamification",
+    "job": "Job"
+  },
+  {
+    "id": 41,
+    "company": "Nair",
+    "type": "brand",
+    "role": "Tech Lead",
+    "job": "Job"
+  },
+  {
+    "id": 42,
+    "company": "Oh Henry",
+    "type": "brand",
+    "role": "Digital Lead",
+    "job": "Job"
+  },
+  {
+    "id": 43,
+    "company": "Playtex",
+    "type": "brand",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 44,
+    "company": "Royal Canin",
+    "type": "brand",
+    "role": "Digital Lead",
+    "job": "Job"
+  },
+  {
+    "id": 45,
+    "company": "Scotts Canada",
+    "type": "brand",
+    "role": "Digital Lead & UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 46,
+    "company": "Skittles",
+    "type": "brand",
+    "role": "UX Design & Gamification",
+    "job": "Job"
+  },
+  {
+    "id": 47,
+    "company": "Smirnoff",
+    "type": "brand",
+    "role": "Tech Lead",
+    "job": "Job"
+  },
+  {
+    "id": 48,
+    "company": "Toyota",
+    "type": "brand",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 49,
+    "company": "Volvo",
+    "type": "brand",
+    "role": "Digital Lead",
+    "job": "Job"
+  },
+  {
+    "id": 50,
+    "company": "Nike",
+    "type": "brand",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 51,
+    "company": "Physicians First",
+    "type": "other",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 52,
+    "company": "TJ Max",
+    "type": "other",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 53,
+    "company": "Discount Car Rentals",
+    "type": "other",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 54,
+    "company": "Cadillac Fairview",
+    "type": "other",
+    "role": "UX Design & Strategy",
+    "job": "Job"
+  },
+  {
+    "id": 55,
+    "company": "Bayer",
+    "type": "other",
+    "role": "UX Design & Strategy",
+    "job": "Job"
+  },
+  {
+    "id": 56,
+    "company": "BIC",
+    "type": "other",
+    "role": "Tech Lead",
+    "job": "Job"
+  },
+  {
+    "id": 57,
+    "company": "Bargains Group",
+    "type": "other",
+    "role": "UX Design & Engineering",
+    "job": "Job"
+  },
+  {
+    "id": 58,
+    "company": "CML Health Care",
+    "type": "other",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 59,
+    "company": "Harmony Village",
+    "type": "other",
+    "role": "Digital Lead",
+    "job": "Job"
+  },
+  {
+    "id": 60,
+    "company": "Home Depot",
+    "type": "other",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 61,
+    "company": "Home Hardware",
+    "type": "other",
+    "role": "Digital Lead",
+    "job": "Job"
+  },
+  {
+    "id": 62,
+    "company": "HBC",
+    "type": "other",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 63,
+    "company": "Imprint Plus",
+    "type": "other",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 64,
+    "company": "Peugeot",
+    "type": "other",
+    "role": "UX Design & Strategy",
+    "job": "Job"
+  },
+  {
+    "id": 65,
+    "company": "CoreLogic",
+    "type": "other",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 66,
+    "company": "Drop",
+    "type": "other",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 67,
+    "company": "OneHome",
+    "type": "other",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 68,
+    "company": "Camp Ooch",
+    "type": "nfp",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 69,
+    "company": "HotDocs",
+    "type": "nfp",
+    "role": "UX Design & Engineering",
+    "job": "Job"
+  },
+  {
+    "id": 70,
+    "company": "Salvation Army",
+    "type": "nfp",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 71,
+    "company": "Winning Charities International",
+    "type": "nfp",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 72,
+    "company": "World Vision",
+    "type": "nfp",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 73,
+    "company": "Karma CoOp",
+    "type": "nfp",
+    "role": "UX Design & Engineering",
+    "job": "Job"
+  },
+  {
+    "id": 74,
+    "company": "Virgin Unite",
+    "type": "nfp",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 75,
+    "company": "Canada Savings Bond",
+    "type": "nfp",
+    "role": "Digital Lead",
+    "job": "Job"
+  },
+  {
+    "id": 76,
+    "company": "CIO Of Canada",
+    "type": "nfp",
+    "role": "Engineering",
+    "job": "Job"
+  },
+  {
+    "id": 78,
+    "company": "Financial Consumer Agency of Canada",
+    "type": "nfp",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 79,
+    "company": "LCBO",
+    "type": "nfp",
+    "role": "UX Design & Prototyping",
+    "job": "Job"
+  },
+  {
+    "id": 80,
+    "company": "OLG",
+    "type": "nfp",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 81,
+    "company": "YTV",
+    "type": "nfp",
+    "role": "UX Design & Gamification",
+    "job": "Job"
+  },
+  {
+    "id": 82,
+    "company": "TVO",
+    "type": "nfp",
+    "role": "UX Design & Gamification",
+    "job": "Job"
+  },
+  {
+    "id": 83,
+    "company": "Central Counties",
+    "type": "nfp",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 84,
+    "company": "George Brown College",
+    "type": "edu",
+    "role": "User Research",
+    "job": "Job"
+  },
+  {
+    "id": 85,
+    "company": "Humber College",
+    "type": "edu",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 86,
+    "company": "Centennial College",
+    "type": "edu",
+    "role": "UX Design & Engineering",
+    "job": "Job"
+  },
+  {
+    "id": 87,
+    "company": "MadCap Adventures",
+    "type": "edu",
+    "role": "UX Design & Gamification",
+    "job": "Job"
+  },
+  {
+    "id": 88,
+    "company": "Fidelity",
+    "type": "finance",
+    "role": "Digital Lead",
+    "job": "Job"
+  },
+  {
+    "id": 89,
+    "company": "John Hancock",
+    "type": "finance",
+    "role": "Digital Lead",
+    "job": "Job"
+  },
+  {
+    "id": 90,
+    "company": "Intact Insurance",
+    "type": "finance",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 91,
+    "company": "Manulife",
+    "type": "finance",
+    "role": "UX Design & Research",
+    "job": "Job"
+  },
+  {
+    "id": 92,
+    "company": "MasterCard",
+    "type": "finance",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 93,
+    "company": "RBC",
+    "type": "finance",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 94,
+    "company": "Sensibill",
+    "type": "finance",
+    "role": "UX Product Design",
+    "job": "Job"
+  },
+  {
+    "id": 95,
+    "company": "Aviva",
+    "type": "finance",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 96,
+    "company": "BMO",
+    "type": "finance",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 97,
+    "company": "Amex",
+    "type": "finance",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 98,
+    "company": "CIBC",
+    "type": "finance",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 99,
+    "company": "Coalition",
+    "type": "finance",
+    "role": "UX Product Design",
+    "job": "Job"
+  },
+  {
+    "id": 100,
+    "company": "TD Canada Trust",
+    "type": "finance",
+    "role": "UX Design & Prototyping",
+    "job": "Job"
+  },
+  {
+    "id": 101,
+    "company": "Interac",
+    "type": "finance",
+    "role": "UX Design & Engineering",
+    "job": "Job"
+  },
+  {
+    "id": 102,
+    "company": "Bier Markt",
+    "type": "ent",
+    "role": "UX Design & Strategy",
+    "job": "Job"
+  },
+  {
+    "id": 103,
+    "company": "Rouge Magazine",
+    "type": "ent",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 104,
+    "company": "Roy Thompson Hall",
+    "type": "ent",
+    "role": "Digital Lead",
+    "job": "Job"
+  },
+  {
+    "id": 105,
+    "company": "Massy Hall",
+    "type": "ent",
+    "role": "Digital Lead",
+    "job": "Job"
+  },
+  {
+    "id": 106,
+    "company": "Ontario Live Music",
+    "type": "ent",
+    "role": "Digital Lead",
+    "job": "Job"
+  },
+  {
+    "id": 107,
+    "company": "Sony Music",
+    "type": "ent",
+    "role": "Engineering",
+    "job": "Job"
+  },
+  {
+    "id": 108,
+    "company": "Brentwood Classics",
+    "type": "other",
+    "role": "Digital Lead",
+    "job": "Job"
+  },
+  {
+    "id": 108,
+    "company": "The Ex",
+    "type": "ent",
+    "role": "Digital Lead",
+    "job": "Job"
+  },
+  {
+    "id": 109,
+    "company": "The Mahones",
+    "type": "ent",
+    "role": "Tech Lead",
+    "job": "Job"
+  },
+  {
+    "id": 110,
+    "company": "The Rhinos",
+    "type": "ent",
+    "role": "Tech Lead",
+    "job": "Job"
+  },
+  {
+    "id": 111,
+    "company": "Kinetic Records",
+    "type": "ent",
+    "role": "Tech Lead",
+    "job": "Job"
+  },
+  {
+    "id": 112,
+    "company": "Prime Pubs",
+    "type": "ent",
+    "role": "Digital Lead",
+    "job": "Job"
+  },
+  {
+    "id": 113,
+    "company": "Prime Restaurants",
+    "type": "ent",
+    "role": "Digital Lead",
+    "job": "Job"
+  },
+  {
+    "id": 114,
+    "company": "Red Lion TVB",
+    "type": "ent",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 115,
+    "company": "Story Explorer",
+    "type": "ent",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 116,
+    "company": "Swiss Chalet",
+    "type": "ent",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 117,
+    "company": "The TODAY Show",
+    "type": "ent",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 118,
+    "company": "Aga Khan Museum",
+    "type": "ent",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 119,
+    "company": "Bell Mobility",
+    "type": "tech",
+    "role": "Tech Lead",
+    "job": "Job"
+  },
+  {
+    "id": 120,
+    "company": "Compaq",
+    "type": "tech",
+    "role": "Tech Lead",
+    "job": "Job"
+  },
+  {
+    "id": 121,
+    "company": "HP",
+    "type": "tech",
+    "role": "Tech Lead",
+    "job": "Job"
+  },
+  {
+    "id": 122,
+    "company": "mFour",
+    "type": "tech",
+    "role": "UX Product Design",
+    "job": "Job"
+  },
+  {
+    "id": 123,
+    "company": "Mobilicity",
+    "type": "tech",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 124,
+    "company": "XBOX",
+    "type": "tech",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 125,
+    "company": "18 Blocks",
+    "type": "tech",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 126,
+    "company": "Dell",
+    "type": "tech",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 127,
+    "company": "CanSat",
+    "type": "tech",
+    "role": "Engineering",
+    "job": "Job"
+  },
+  {
+    "id": 128,
+    "company": "Cogeco",
+    "type": "tech",
+    "role": "UX Design & Gamification",
+    "job": "Job"
+  },
+  {
+    "id": 129,
+    "company": "TekSavvy",
+    "type": "tech",
+    "role": "UX Design & Engineering",
+    "job": "Job"
+  },
+  {
+    "id": 130,
+    "company": "Wind Mobile",
+    "type": "tech",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 131,
+    "company": "Xerox",
+    "type": "tech",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 132,
+    "company": "Intel",
+    "type": "tech",
+    "role": "Digital Lead",
+    "job": "Job"
+  },
+  {
+    "id": 133,
+    "company": "Lakefield Research",
+    "type": "tech",
+    "role": "Engineer",
+    "job": "Job"
+  },
+  {
+    "id": 134,
+    "company": "Verizon",
+    "type": "tech",
+    "role": "UX Design",
+    "job": "Job"
   }
 ]
