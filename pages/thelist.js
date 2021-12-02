@@ -6,7 +6,7 @@ export default function List() {
             <ul role="list" className="mt-3 grid grid-cols-1 gap-5 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {listItems.map(listItem =>
                     <li key={listItem.id} className="col-span-1 flex shadow-sm rounded-md">
-                        <div className="flex-shrink-0 flex items-center justify-center w-16 text-white text-sm font-medium rounded-l-md">
+                        <div className="bg-logo flex-shrink-0 flex items-center justify-center w-16 text-white text-sm font-medium rounded-l-md">
                             ICO
                         </div>
                         <div className="flex-1 flex items-center justify-between border-t border-r border-b border-gray-200 bg-white rounded-r-md truncate">
