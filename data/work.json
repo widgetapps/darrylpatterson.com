@@ -2,6 +2,38 @@
   {
     "id": 1,
     "slug": "slug1",
-    "title": "The title"
+    "title": "The title",
+    "client": "The client",
+    "overview": "About the work",
+    "role": "This is what I did",
+    "when": "1998-2001",
+    "tldr": [
+      {
+        "header": "Section header",
+        "content": "The long stuff"
+      },
+      {
+        "header": "Section header",
+        "content": "The long stuff"
+      }
+    ],
+    "thumbnail": {
+      "src": "/",
+      "caption": "Caption"
+    },
+    "links": [
+      {
+        "type": "website|git|pdf",
+        "url": "http://www.stuff.com",
+        "copy": "This goes somewhere",
+        "about": "About this link"
+      }
+    ],
+    "images": [
+      {
+        "src": "/",
+        "caption": "The image caption"
+      }
+    ]
   }
 ]

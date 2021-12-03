@@ -16,6 +16,11 @@ module.exports = {
         'violet-800': '#5B21B6',
         'fuchsia-800': '#86198F',
         'rose-800': '#9F1239'
+      },
+      backgroundImage: {
+        'head-contact': "url('/photos/sailboat.jpg')",
+        'head-list': "url('/photos/beach.jpg')",
+        'head-work': "url('/photos/snowset.jpg')"
       }
     },
   },

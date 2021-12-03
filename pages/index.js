@@ -9,6 +9,8 @@ import meViking from '../public/me/darryl_viking.jpg';
 import ListItem from "../components/listitem";
 import React from "react";
 
+import homeContent from '../data/home.json';
+
 const mePhotos = [
     {
         "id": "holiday",
@@ -48,7 +50,7 @@ function classNames(...classes) {
 
 export default function Home() {
   return (
-    <div className="grid grid-cols-4 gap-4">
+    <div className="grid grid-cols-4 gap-4 sm:gap-10">
       <div className="-space-y-1.5 gap-0">
           {mePhotos.map(photo =>
               <div className="">
@@ -64,7 +66,15 @@ export default function Home() {
           )}
       </div>
       <div className="col-span-3">
-        Content
+          <div className="text-xl sm:text-3xl italic mt-2 sm:mt-5 mb-8 sm:mb-14 mr-4 sm:mr-1">"Equal parts expert, educator and leader, my childhood fascination with the creative potential of
+              technology has fueled a lifetime of learning, exploration and achievement."</div>
+
+          {homeContent.map(item =>
+              <div className="mb-4 sm:mb-8">
+                  <h2 className="text-base sm:text-lg font-bold">{item.header}</h2>
+                  <p className="text-sm sm:text-base">{item.content}</p>
+              </div>
+          )}
       </div>
     </div>
   )
