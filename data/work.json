@@ -1,20 +1,63 @@
 [
   {
     "id": 1,
-    "slug": "slug1",
-    "title": "The title",
-    "client": "The client",
-    "overview": "About the work",
-    "role": "This is what I did",
-    "when": "1998-2001",
+    "slug": "this",
+    "title": "My Portfolio",
+    "client": "Just me",
+    "overview": "I've always built & hosted my portfolio on 3rd party CMS systems. I figured it was time to build my own from the ground up, so I did.",
+    "role": "Everything",
+    "when": "2021",
     "tldr": [
       {
-        "header": "Section header",
-        "content": "The long stuff"
+        "header": "Design",
+        "content": "I whipped up some simple wireframes in Figma to help decide on the pages I needed and what content I should include. I'm using UI ideas from TailwindUI and based colours on my little logo."
       },
       {
-        "header": "Section header",
-        "content": "The long stuff"
+        "header": "Tech Stack",
+        "content": "I like to learn new things, so I built this one using TailwindCSS, NextJS and hosting on Vercel to take advantage of their easy peasy CI and static file build."
+      }
+    ],
+    "thumbnail": {
+      "src": "/me/darryl_holiday.jpg",
+      "caption": "Caption"
+    },
+    "links": [
+      {
+        "type": "website",
+        "url": "https://darrylpatterson.com",
+        "link": "My Portfolio",
+        "about": ""
+      },
+      {
+        "type": "git",
+        "url": "https://github.com/widgetapps/darrylpatterson.com",
+        "link": "The Code",
+        "about": ""
+      }
+    ],
+    "images": [
+      {
+        "src": "/me/darryl_holiday.jpg",
+        "caption": "Caption"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "mbna",
+    "title": "MBNA Mobile Credit Card Application",
+    "client": "TD Canada Trust",
+    "overview": "",
+    "role": "UX Design & Prototype",
+    "when": "2021",
+    "tldr": [
+      {
+        "header": "Design",
+        "content": ""
+      },
+      {
+        "header": "Prototype",
+        "content": ""
       }
     ],
     "thumbnail": {
@@ -23,10 +66,288 @@
     },
     "links": [
       {
-        "type": "website|git|pdf",
-        "url": "http://www.stuff.com",
-        "copy": "This goes somewhere",
-        "about": "About this link"
+        "type": "website",
+        "url": "https://apply.mbna.ca/applicationform/generateApplicationForm.htm?locale=en_CA&src=DADI17",
+        "link": "Apply for Credit Card",
+        "about": ""
+      }
+    ],
+    "images": [
+      {
+        "src": "/",
+        "caption": "The image caption"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "dws-iot",
+    "title": "IoT Stack",
+    "client": "Digital Water Solutions Inc.",
+    "overview": "",
+    "role": "Engineering",
+    "when": "2016-2021",
+    "tldr": [
+      {
+        "header": "Workers",
+        "content": ""
+      },
+      {
+        "header": "API",
+        "content": ""
+      }
+    ],
+    "thumbnail": {
+      "src": "/",
+      "caption": "Caption"
+    },
+    "links": [
+      {
+        "type": "website",
+        "url": "https://digitalwater.solutions/",
+        "link": "Digital Water Solutions Inc.",
+        "about": ""
+      }
+    ],
+    "images": [
+      {
+        "src": "/",
+        "caption": "The image caption"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "rotary2018",
+    "title": "2018 International Convention",
+    "client": "Rotary International",
+    "overview": "",
+    "role": "Engineering",
+    "when": "2017-2018",
+    "tldr": [
+      {
+        "header": "HOC Website",
+        "content": ""
+      },
+      {
+        "header": "POS Systems",
+        "content": ""
+      },
+      {
+        "header": "Event Management",
+        "content": ""
+      }
+    ],
+    "thumbnail": {
+      "src": "/",
+      "caption": "Caption"
+    },
+    "links": [
+      {
+        "type": "website",
+        "url": "https://digitalwater.solutions/",
+        "link": "Digital Water Solutions Inc.",
+        "about": ""
+      }
+    ],
+    "images": [
+      {
+        "src": "/",
+        "caption": "The image caption"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "onehome",
+    "title": "One Home Launch",
+    "client": "CoreLogic",
+    "role": "UX Product Design",
+    "when": "2019-2020",
+    "tldr": [
+      {
+        "header": "API Integration Research",
+        "content": ""
+      },
+      {
+        "header": "User Flows",
+        "content": ""
+      },
+      {
+        "header": "Concept Wireframes",
+        "content": ""
+      }
+    ],
+    "thumbnail": {
+      "src": "/",
+      "caption": "Caption"
+    },
+    "links": [
+      {
+        "type": "website",
+        "url": "https://digitalwater.solutions/",
+        "link": "Digital Water Solutions Inc.",
+        "about": ""
+      }
+    ],
+    "images": [
+      {
+        "src": "/",
+        "caption": "The image caption"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "homehardware",
+    "title": "Home Hardware Launch",
+    "client": "Home Hardware",
+    "role": "Department Head",
+    "when": "2006-2007",
+    "tldr": [
+      {
+        "header": "Something",
+        "content": ""
+      }
+    ],
+    "thumbnail": {
+      "src": "/",
+      "caption": "Caption"
+    },
+    "links": [
+      {
+        "type": "website",
+        "url": "https://digitalwater.solutions/",
+        "link": "Digital Water Solutions Inc.",
+        "about": ""
+      }
+    ],
+    "images": [
+      {
+        "src": "/",
+        "caption": "The image caption"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "dapagee",
+    "title": "Dapagee Branding & Launch",
+    "client": "Dapagee Industrial IoT Inc.",
+    "role": "Everything",
+    "when": "2019",
+    "tldr": [
+      {
+        "header": "Something",
+        "content": ""
+      }
+    ],
+    "thumbnail": {
+      "src": "/",
+      "caption": "Caption"
+    },
+    "links": [
+      {
+        "type": "website",
+        "url": "https://digitalwater.solutions/",
+        "link": "Digital Water Solutions Inc.",
+        "about": ""
+      }
+    ],
+    "images": [
+      {
+        "src": "/",
+        "caption": "The image caption"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "agakhan",
+    "title": "Aga Khan Museum Website",
+    "client": "Aga Khan Museum",
+    "role": "UX Design",
+    "when": "2018",
+    "tldr": [
+      {
+        "header": "Something",
+        "content": ""
+      }
+    ],
+    "thumbnail": {
+      "src": "/",
+      "caption": "Caption"
+    },
+    "links": [
+      {
+        "type": "website",
+        "url": "https://digitalwater.solutions/",
+        "link": "Digital Water Solutions Inc.",
+        "about": ""
+      }
+    ],
+    "images": [
+      {
+        "src": "/",
+        "caption": "The image caption"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "slug": "prpp",
+    "title": "PRPP Application",
+    "client": "ManuLife",
+    "role": "UX Design & Prototyping",
+    "when": "2016",
+    "tldr": [
+      {
+        "header": "Something",
+        "content": ""
+      }
+    ],
+    "thumbnail": {
+      "src": "/",
+      "caption": "Caption"
+    },
+    "links": [
+      {
+        "type": "website",
+        "url": "https://digitalwater.solutions/",
+        "link": "Digital Water Solutions Inc.",
+        "about": ""
+      }
+    ],
+    "images": [
+      {
+        "src": "/",
+        "caption": "The image caption"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "slug": "missingcard",
+    "title": "Report Missing Card",
+    "client": "TD Canada Trust",
+    "role": "UX Design & User Testing",
+    "when": "2018",
+    "tldr": [
+      {
+        "header": "Something",
+        "content": ""
+      }
+    ],
+    "thumbnail": {
+      "src": "/",
+      "caption": "Caption"
+    },
+    "links": [
+      {
+        "type": "website",
+        "url": "https://digitalwater.solutions/",
+        "link": "Digital Water Solutions Inc.",
+        "about": ""
       }
     ],
     "images": [
