@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "active": false,
+    "active": true,
     "slug": "this",
     "title": "My Portfolio",
     "client": "Just me",
