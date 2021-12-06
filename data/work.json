@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "active": true,
+    "active": false,
     "slug": "this",
     "title": "My Portfolio",
     "client": "Just me",
@@ -45,7 +45,7 @@
   },
   {
     "id": 2,
-    "active": true,
+    "active": false,
     "slug": "mbna",
     "title": "MBNA Mobile Credit Card Application",
     "client": "TD Canada Trust",
@@ -83,7 +83,7 @@
   },
   {
     "id": 3,
-    "active": true,
+    "active": false,
     "slug": "dws-iot",
     "title": "IIoT Stack",
     "client": "Digital Water Solutions Inc.",
@@ -121,7 +121,7 @@
   },
   {
     "id": 4,
-    "active": true,
+    "active": false,
     "slug": "rotary2018",
     "title": "2018 International Convention",
     "client": "Rotary International",
@@ -163,7 +163,7 @@
   },
   {
     "id": 5,
-    "active": true,
+    "active": false,
     "slug": "onehome",
     "title": "One Home Launch",
     "client": "CoreLogic",
@@ -204,7 +204,7 @@
   },
   {
     "id": 6,
-    "active": true,
+    "active": false,
     "slug": "homehardware",
     "title": "Home Hardware Launch",
     "client": "Home Hardware",
@@ -237,7 +237,7 @@
   },
   {
     "id": 7,
-    "active": true,
+    "active": false,
     "slug": "dapagee",
     "title": "Dapagee Branding & Launch",
     "client": "Dapagee Industrial IoT Inc.",
@@ -270,7 +270,7 @@
   },
   {
     "id": 8,
-    "active": true,
+    "active": false,
     "slug": "agakhan",
     "title": "Aga Khan Museum Website",
     "client": "Aga Khan Museum",
@@ -303,7 +303,7 @@
   },
   {
     "id": 9,
-    "active": true,
+    "active": false,
     "slug": "prpp",
     "title": "PRPP Application",
     "client": "ManuLife",
@@ -336,7 +336,7 @@
   },
   {
     "id": 10,
-    "active": true,
+    "active": false,
     "slug": "missingcard",
     "title": "Report Missing Card",
     "client": "TD Canada Trust",

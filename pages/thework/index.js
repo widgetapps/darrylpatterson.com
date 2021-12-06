@@ -12,6 +12,7 @@ export default function Work() {
                 fluid from one to the other - engineering, UX design, leadership, strategy, prototyping, branding, research.
                 Here are some of my favourites.
             </div>
+            <div>I'm still working on compiling together the files for the portfolio.</div>
             <ul role="list" className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 {works.filter(work => work.active === true).map((work) => (
                     <li
