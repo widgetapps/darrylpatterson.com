@@ -13,7 +13,7 @@ import {
 } from "@heroicons/react/solid";
 import React, { useState } from "react";
 
-const listItems = require('../data/list.json');
+let listItems = require('../data/list.json');
 
 const filters = [
     {
@@ -79,6 +79,8 @@ function classNames(...classes) {
 }
 
 export default function List() {
+
+    listItems = listItems.sort((a,b) => (a.company.toUpperCase() > b.company.toUpperCase()) ? 1 : ((b.company.toUpperCase() > a.company.toUpperCase()) ? -1 : 0));
 
     const [filteredItems, setFilteredItems] = useState(listItems);
     const [activeFilter, setActiveFilter] = useState(filters.find(filter => filter.type.toString() === 'all'));

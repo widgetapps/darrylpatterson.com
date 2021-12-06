@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "active": true,
     "slug": "this",
     "title": "My Portfolio",
     "client": "Just me",
@@ -44,6 +45,7 @@
   },
   {
     "id": 2,
+    "active": true,
     "slug": "mbna",
     "title": "MBNA Mobile Credit Card Application",
     "client": "TD Canada Trust",
@@ -81,8 +83,9 @@
   },
   {
     "id": 3,
+    "active": true,
     "slug": "dws-iot",
-    "title": "IoT Stack",
+    "title": "IIoT Stack",
     "client": "Digital Water Solutions Inc.",
     "overview": "",
     "role": "Engineering",
@@ -118,6 +121,7 @@
   },
   {
     "id": 4,
+    "active": true,
     "slug": "rotary2018",
     "title": "2018 International Convention",
     "client": "Rotary International",
@@ -159,6 +163,7 @@
   },
   {
     "id": 5,
+    "active": true,
     "slug": "onehome",
     "title": "One Home Launch",
     "client": "CoreLogic",
@@ -199,6 +204,7 @@
   },
   {
     "id": 6,
+    "active": true,
     "slug": "homehardware",
     "title": "Home Hardware Launch",
     "client": "Home Hardware",
@@ -231,6 +237,7 @@
   },
   {
     "id": 7,
+    "active": true,
     "slug": "dapagee",
     "title": "Dapagee Branding & Launch",
     "client": "Dapagee Industrial IoT Inc.",
@@ -263,6 +270,7 @@
   },
   {
     "id": 8,
+    "active": true,
     "slug": "agakhan",
     "title": "Aga Khan Museum Website",
     "client": "Aga Khan Museum",
@@ -295,6 +303,7 @@
   },
   {
     "id": 9,
+    "active": true,
     "slug": "prpp",
     "title": "PRPP Application",
     "client": "ManuLife",
@@ -327,6 +336,7 @@
   },
   {
     "id": 10,
+    "active": true,
     "slug": "missingcard",
     "title": "Report Missing Card",
     "client": "TD Canada Trust",

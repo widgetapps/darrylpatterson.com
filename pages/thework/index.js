@@ -13,7 +13,7 @@ export default function Work() {
                 Here are some of my favourites.
             </div>
             <ul role="list" className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                {works.map((work) => (
+                {works.filter(work => work.active === true).map((work) => (
                     <li
                         key={work.id}
                         className="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200"
