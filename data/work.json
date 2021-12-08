@@ -147,15 +147,15 @@
     "images": [
       {
         "src": "/work/dws-iot/dws_1.png",
-        "caption": "The image caption"
+        "caption": "Incoming messages in RabbitMQ"
       },
       {
         "src": "/work/dws-iot/dws_2.png",
-        "caption": "The image caption"
+        "caption": "The MQTT dashboard"
       },
       {
         "src": "/work/dws-iot/dws_3.png",
-        "caption": "The image caption"
+        "caption": "MongoDB Atlas activity"
       }
     ]
   },
@@ -234,19 +234,19 @@
     "images": [
       {
         "src": "/work/onehome/oh_1.png",
-        "caption": "The image caption"
+        "caption": "Excerpt of an App Map"
       },
       {
         "src": "/work/onehome/oh_2.png",
-        "caption": "The image caption"
+        "caption": "Excerpt of a user flow"
       },
       {
         "src": "/work/onehome/oh_3.png",
-        "caption": "The image caption"
+        "caption": "Conceptual wire for comparing homes"
       },
       {
         "src": "/work/onehome/oh_4.png",
-        "caption": "The image caption"
+        "caption": "UX design based on my wires"
       }
     ]
   },
