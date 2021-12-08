@@ -3,10 +3,14 @@ import Image from "next/image";
 import iconLinkedin from "../public/linkedin.svg";
 import iconGithub from "../public/github.svg";
 import React from "react";
+import Head from "next/head";
 
 export default function Contact() {
     return (
         <div>
+            <Head>
+                <title>Darryl Patterson - Contact</title>
+            </Head>
             <div className="bg-head-contact bg-center bg-cover flex-grow h-44 sm:rounded-lg"/>
             <div className="grid grid-cols-5 gap-6 ml-10 mt-10">
                 <div className="w-12">

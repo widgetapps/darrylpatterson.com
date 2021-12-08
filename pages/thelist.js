@@ -14,6 +14,7 @@ import {
 import React, { useState } from "react";
 
 import * as ga from '../lib/ga';
+import Head from "next/head";
 
 let listItems = require('../data/list.json');
 
@@ -107,6 +108,9 @@ export default function List() {
 
     return (
         <div>
+            <Head>
+                <title>Darryl Patterson - The List</title>
+            </Head>
             <div className="bg-head-list bg-center bg-cover flex-grow h-44 sm:rounded-lg"/>
             <div className="ml-10 mr-10 mb-8 sm:mb-14 mt-5 sm:mt-10 text-sm sm:text-lg">
                 I've done a lot work over the past 30+ years for a lot of companies and brands. Some of the work was as

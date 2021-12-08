@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from "react";
 import {TemplateIcon} from "@heroicons/react/outline";
+import Head from "next/head";
 let works = require('../../data/work.json');
 
 export default function Work() {
@@ -8,6 +9,9 @@ export default function Work() {
 
     return (
         <div>
+            <Head>
+                <title>Darryl Patterson - The Work</title>
+            </Head>
             <div className="bg-head-work bg-center bg-cover flex-grow h-44 sm:rounded-lg"/>
             <div className="ml-10 mr-10 mb-8 sm:mb-14 mt-5 sm:mt-10 text-sm sm:text-lg">
                 I've been lucky to work on some really great projects and with some really great people. The roles are quite

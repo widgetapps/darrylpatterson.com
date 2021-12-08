@@ -1,7 +1,12 @@
+import Head from "next/head";
+import React from "react";
 
 export default function License() {
     return (
         <div className="space-y-6">
+            <Head>
+                <title>Darryl Patterson - License</title>
+            </Head>
             <h1 className="text-2xl">MIT License</h1>
 
             <p>Copyright {(new Date().getFullYear())} Patterson Powered Ltd.</p>

@@ -2,6 +2,8 @@ import { useRouter } from 'next/router'
 import Image from "next/image";
 import Link from 'next/link';
 import {ArrowSmLeftIcon} from "@heroicons/react/solid";
+import Head from "next/head";
+import React from "react";
 
 let works = require('../../data/work.json');
 
@@ -28,6 +30,9 @@ const WorkItem= () => {
 
     return (
         <div>
+            <Head>
+                <title>Darryl Patterson - The Work: {work.title}</title>
+            </Head>
             <div className="mb-3">
                 <a className="relative text-sm text-gray-700 font-medium hover:text-gray-500" href="/thework">
                     <ArrowSmLeftIcon className="inline w-5 h-5 mb-1" aria-hidden="true" />
