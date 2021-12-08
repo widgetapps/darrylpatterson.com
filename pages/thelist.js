@@ -13,6 +13,8 @@ import {
 } from "@heroicons/react/solid";
 import React, { useState } from "react";
 
+import * as ga from '../lib/ga';
+
 let listItems = require('../data/list.json');
 
 const filters = [
@@ -86,6 +88,13 @@ export default function List() {
     const [activeFilter, setActiveFilter] = useState(filters.find(filter => filter.type.toString() === 'all'));
 
     function applyFilter(type, e) {
+        ga.event({
+            action: "filter",
+            params : {
+                filter: type
+            }
+        })
+
         switch (type) {
             case 'all':
                 setFilteredItems(listItems);
