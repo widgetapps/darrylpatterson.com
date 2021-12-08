@@ -4,6 +4,8 @@ import {TemplateIcon} from "@heroicons/react/outline";
 let works = require('../../data/work.json');
 
 export default function Work() {
+    works = works.sort((a,b) => a.id - b.id);
+
     return (
         <div>
             <div className="bg-head-work bg-center bg-cover flex-grow h-44 sm:rounded-lg"/>
@@ -51,6 +53,9 @@ export default function Work() {
                     </li>
                 ))}
             </ul>
+            <div className="ml-10 mr-10 mb-8 sm:mb-14 mt-5 sm:mt-10 text-sm sm:text-lg text-center">
+                ** MORE WORK WILL BE POSTED **
+            </div>
         </div>
     )
 }

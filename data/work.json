@@ -1,26 +1,26 @@
 [
   {
-    "id": 1,
+    "id": 5,
     "active": true,
     "slug": "this",
     "title": "My Portfolio",
-    "client": "Just me",
-    "overview": "I've always built & hosted my portfolio on 3rd party CMS systems. I figured it was time to build my own from the ground up, so I did.",
+    "client": "Darryl Patterson",
+    "overview": "I've always built & hosted my portfolio on 3rd party CMS systems. I figured it was time to build my own from the ground up, so I did. I needed to demonstrate the depth & breadth of my experience by featuring some of my best work and skillset.",
     "role": "Everything",
     "when": "2021",
     "tldr": [
       {
         "header": "Design",
-        "content": "I whipped up some simple wireframes in Figma to help decide on the pages I needed and what content I should include. I'm using UI ideas from TailwindUI and based colours on my little logo."
+        "content": "I whipped up some simple wireframes in Figma to help decide on the pages I needed and what content I should include. I'm using UI ideas from TailwindUI and based the colours on my little logo. Can you guess what animal is in that logo? It's related to the Scottish Patterson family coat of arms."
       },
       {
         "header": "Tech Stack",
-        "content": "I like to learn new things, so I built this one using TailwindCSS, NextJS and hosting on Vercel to take advantage of their easy peasy CI and static file build."
+        "content": "The best way for me to learn new things is to pick a project to use as a learning opportunity. I wanted to see what TailwindCSS was like and I was looking at a new front-end framework I could explore. I've built projects in both React and Angular in the past, and I stumbled upon NextJS which extends React and makes it a little quicker to build stuff and it integrates easily with Tailwind. This portfolio site is pretty simple, so I also when with Vercel to host it. I like how Vercel hooks into your GitHub repo and performs a build & publish everytime code is committed to the main branch - that's pretty cool easy CI right there. Although this portfolio is a pretty basic, I'm using JSON files for the data (portfolio, the list, the person) and React components where it makes sense. The code is up on GitHub so feel free to take a peek."
       }
     ],
     "thumbnail": {
-      "src": "/me/darryl_holiday.jpg",
-      "caption": "Caption"
+      "src": "/work/this/this_thumb.png",
+      "caption": "Patterson logo"
     },
     "links": [
       {
@@ -38,70 +38,96 @@
     ],
     "images": [
       {
-        "src": "/me/darryl_holiday.jpg",
-        "caption": "Caption"
+        "src": "/work/this/this_1.png",
+        "caption": "Sexy screen shot of code"
       }
     ]
   },
   {
     "id": 2,
-    "active": false,
+    "active": true,
     "slug": "mbna",
     "title": "MBNA Mobile Credit Card Application",
     "client": "TD Canada Trust",
-    "overview": "",
+    "overview": "Resulted in an overall increase in application completes on mobile devices. Still in use today.",
     "role": "UX Design & Prototype",
-    "when": "2021",
+    "when": "2015",
     "tldr": [
       {
-        "header": "Design",
-        "content": ""
+        "header": "Responsive vs Adaptive",
+        "content": "The original ask was to create adaptive versions of the application form for small and medium screens (phone & tablet). I recommended we go fully responsive which would save a lot of time and money designing & building one responsive experience. I half won that battle. We ended up going with a hybrid: leave the desktop experience as is & design a new responsive experience for all other screens."
       },
       {
-        "header": "Prototype",
-        "content": ""
+        "header": "One Page to Multi-Page Experience",
+        "content": "The original desktop credit card application form is one big long single page experience. Certainly not ideal for smalls screens. I carefully reviewed and documented all of the necessary fields and all of the variations required for an online credit card application. Based on my research, I decided on five steps with a sixth step for application review & submission. Form fields were re-grouped into smaller steps, giving the user better context of why the information is required."
+      },
+      {
+        "header": "Handling Long Legal",
+        "content": "Understanding legal requirements (especially for banks) is really important in order to make smart UX decisions to help meet both the user's needs and the leqal requirements. The legal department insisted that the very long borrowing disclosures (a legal requirement mandated by the Canadian government) had to be inline. This is so the user 'sees' the disclosure before starting the application. But we all know that most users ignore long disclosures and just find where the checkbox is. I proposed a full screen disclosure as an in-between step: the user clicks start, they see the disclosure, they choose whether or not to proceed. I argued this better met the legal need - the user MUST see the disclosure to move on - and made for a better experience for the user - no scroll pane in a scrolling page while also prioritizing the importance of the disclosure. Legal didn't disagree, but I lost the fight due to them feeling it was too much risk to do something new."
+      },
+      {
+        "header": "The Prototype",
+        "content": "The wireframes for this project were done with Axure. The visual designer used the wireframes to complete the visual design. The internal client wanted a high-resolution prototype of the new experience to present to the larger teams at TD. Given my background, I was able to create a pixel perfect prototype using AngularJS (yes, v1). I used SQLite for local storage between steps. The prototype ran locally but very much felt like a live experience. The engineering team ended up building the application form in Angular and appreciated the HTML. CSS and Angular work already done for them."
       }
     ],
     "thumbnail": {
-      "src": "/",
+      "src": "/work/mbna/mbna_thumb.png",
       "caption": "Caption"
     },
     "links": [
       {
         "type": "website",
         "url": "https://apply.mbna.ca/applicationform/generateApplicationForm.htm?locale=en_CA&src=DADI17",
-        "link": "Apply for Credit Card",
+        "link": "MBNA Website",
+        "about": ""
+      },
+      {
+        "type": "git",
+        "url": "https://github.com/widgetapps/mbna-mobile-applications",
+        "link": "The Code",
         "about": ""
       }
     ],
     "images": [
       {
-        "src": "/",
-        "caption": "The image caption"
+        "src": "/work/mbna/mbna_1.png",
+        "caption": "Application start page"
+      },
+      {
+        "src": "/work/mbna/mbna_2.png",
+        "caption": "Employment information section"
+      },
+      {
+        "src": "/work/mbna/mbna_3.png",
+        "caption": "Confirmation page"
       }
     ]
   },
   {
     "id": 3,
-    "active": false,
+    "active": true,
     "slug": "dws-iot",
     "title": "IIoT Stack",
     "client": "Digital Water Solutions Inc.",
-    "overview": "",
+    "overview": "DWS makes a smart hydrant insert that can detect leaks, physical tapering and water temperture. The inserts are installed into existing hydrants and the hydrants remain in service once installed. The sensors (pressure, hydrophone, temperature) are in a stainless steel enclosure below the hydrant valve allowing constant monitoring of the municipal water system. I designed & coded the system to receive, process and store telemetry as well as the RESTful API. I also setup and maintained the hosting infrastructure.",
     "role": "Engineering",
     "when": "2016-2021",
     "tldr": [
       {
-        "header": "Workers",
-        "content": ""
+        "header": "API Design & Documentation",
+        "content": "The RESTful API was documented using RAML. The raml2html utility was used to create the HTML version of the documentation (link to documentation provided below). The endpoints generally match the database collections with some enhancements to enforce some important business rules. As with most API designs, a good balance was achieved to assure great performance and ease of use."
       },
       {
-        "header": "API",
-        "content": ""
+        "header": "Tech Stack",
+        "content": "The challenge with IoT telemetry is not only the amount of data that flows into the system, but also the fluctuation is data flow. Hydrants first send data to an MQTT broker which has a set of auto-scaling workers the subscribe to the hydrant topics, decode the CBOR data and then re-queue to a RabbitMQ broker (note: a REDIS key store is used to persist multi-part data). The auto-scaling RabbitMQ workers handle writing the telemetry data to the MongoDB database and handling any alerts (Twilio is used for SMS and email alerts) that might be triggered. The load balanced API is written in NodeJS and the processes are managed with PM2. API endpoints that request telemetry data act only as a middle-man - data is queried and is streamed to the caller with no processing allowing for fast queries. The workers and the API are hosted on GCP."
+      },
+      {
+        "header": "The Workers",
+        "content": "There are two sets of workers used to process incoming telemetry. The first set processes the telemetry data coming in from the hydrants. Each data point sent to the MQTT server has a unique topic that includes the hydrant ID and the sensor type and all telemetry data is encoded with CBOR. Messages can be single part or multi-part. Single part telemetry is decoded into the JSON document layout required for database insertion and is re-queued to a RabbitMQ broker. Multi-part telemetry happens when a lot of data is sent by a hydrant (like a pressure event). Since the workers are stateless, each part is sent to a REDIS server and once the last message is received, the worker assembles all of the parts into once big CBOR payload and then decodes and re-queues each data point into the RabbitMQ broker (this can be hundreds). There are two RabbitMQ brokers. The first one simply subscribes to the queue that has the documents that need to be inserted into the database. This worker is very simple - is takes the unaltered JSON document and performs an INSERT into the MongoDB collection. The second worker checks to see if telemetry values exceed configured mix/max values and send out an alert via Twilio when they do. The workers are written in NodeJS, they are hosted as auto-scaling instances on GCP and they are stateless."
       }
     ],
     "thumbnail": {
-      "src": "/",
+      "src": "/work/dws-iot/dws_thumb.png",
       "caption": "Caption"
     },
     "links": [
@@ -110,11 +136,25 @@
         "url": "https://digitalwater.solutions/",
         "link": "Digital Water Solutions Inc.",
         "about": ""
+      },
+      {
+        "type": "website",
+        "url": "https://dapagee.dev/documentation/api/v2/",
+        "link": "API Documentation (at Dapagee)",
+        "about": ""
       }
     ],
     "images": [
       {
-        "src": "/",
+        "src": "/work/dws-iot/dws_1.png",
+        "caption": "The image caption"
+      },
+      {
+        "src": "/work/dws-iot/dws_2.png",
+        "caption": "The image caption"
+      },
+      {
+        "src": "/work/dws-iot/dws_3.png",
         "caption": "The image caption"
       }
     ]
@@ -143,7 +183,7 @@
       }
     ],
     "thumbnail": {
-      "src": "/",
+      "src": "/work/rotary2018/hoc_thumb.png",
       "caption": "Caption"
     },
     "links": [
@@ -154,50 +194,58 @@
         "about": ""
       }
     ],
-    "images": [
-      {
-        "src": "/",
-        "caption": "The image caption"
-      }
-    ]
+    "images": []
   },
   {
-    "id": 5,
-    "active": false,
+    "id": 1,
+    "active": true,
     "slug": "onehome",
     "title": "One Home Launch",
     "client": "CoreLogic",
+    "overview": "CoreLogic is one of the biggest provider for home listing management and public records solution for real estate. Most of their tools are made for agents and companies that service the real estate market. They were looking to put a new face on their customer facing product given the new competition that was gaining popularity. They re-branded this home buyer portal as OneHome. I was the lead UX designer for this 12 month product development and launch.",
     "role": "UX Product Design",
     "when": "2019-2020",
     "tldr": [
       {
         "header": "API Integration Research",
-        "content": ""
+        "content": "Due to the complex data needs of this project, we needed to integrate with many 3rd party APIs. Ny first task was to do a deep dive into the APIs we were working with to understand what data we could use. I setup a big old spreadsheet that documented all of the data that each API returned, along with data types, dependencies and length. Duplicate data would often come from more than one source, so I helped identify which APIs had the best data to meet the project's needs."
       },
       {
         "header": "User Flows",
-        "content": ""
+        "content": "User flows at this client are a key deliverable that are used both by the UX designers and the solutions architects. Each flow identifies how a user progresses through a single task, describing any element that the user interacts with like form fields, links and buttons. The un-happy paths are identified along with error states and modals. This project required over 140 user flows to adequately define each task a user could accomplish in OneHome. Flows were created with OmniGraffle with some work being done in Miro & LucidChart."
       },
       {
         "header": "Concept Wireframes",
-        "content": ""
+        "content": "Flows can't fully describe what a UX designer is thinking, so concept wires where often created to better demonstrate the UI. Wires were created in Sketch (and later in Figma) to show some of the more complex layouts. The screen that allows a user to search for homes includes a map, the listings and other supporting data that also had to scale down to mobile screens. Wireframes were used to show how the information in the flows translated to the UI. Many of the flows required conceptual wires that the team used to comment on and helped to improve the experience."
       }
     ],
     "thumbnail": {
-      "src": "/",
+      "src": "/work/onehome/oh_thumb.png",
       "caption": "Caption"
     },
     "links": [
       {
         "type": "website",
-        "url": "https://digitalwater.solutions/",
-        "link": "Digital Water Solutions Inc.",
+        "url": "https://www.onehome.com/",
+        "link": "OneHome",
         "about": ""
       }
     ],
     "images": [
       {
-        "src": "/",
+        "src": "/work/onehome/oh_1.png",
+        "caption": "The image caption"
+      },
+      {
+        "src": "/work/onehome/oh_2.png",
+        "caption": "The image caption"
+      },
+      {
+        "src": "/work/onehome/oh_3.png",
+        "caption": "The image caption"
+      },
+      {
+        "src": "/work/onehome/oh_4.png",
         "caption": "The image caption"
       }
     ]
@@ -217,7 +265,7 @@
       }
     ],
     "thumbnail": {
-      "src": "/",
+      "src": "/work/homehardware/hh_thumb.png",
       "caption": "Caption"
     },
     "links": [
@@ -228,12 +276,7 @@
         "about": ""
       }
     ],
-    "images": [
-      {
-        "src": "/",
-        "caption": "The image caption"
-      }
-    ]
+    "images": []
   },
   {
     "id": 7,
@@ -250,7 +293,7 @@
       }
     ],
     "thumbnail": {
-      "src": "/",
+      "src": "/work/dapagee/dapagee_thumb.png",
       "caption": "Caption"
     },
     "links": [
@@ -261,12 +304,7 @@
         "about": ""
       }
     ],
-    "images": [
-      {
-        "src": "/",
-        "caption": "The image caption"
-      }
-    ]
+    "images": []
   },
   {
     "id": 8,
@@ -316,7 +354,7 @@
       }
     ],
     "thumbnail": {
-      "src": "/",
+      "src": "/work/prpp/prpp_thumb.png",
       "caption": "Caption"
     },
     "links": [
@@ -329,7 +367,15 @@
     ],
     "images": [
       {
-        "src": "/",
+        "src": "/work/prpp/prpp_1.png",
+        "caption": "The image caption"
+      },
+      {
+        "src": "/work/prpp/prpp_2.png",
+        "caption": "The image caption"
+      },
+      {
+        "src": "/work/prpp/prpp_3.png",
         "caption": "The image caption"
       }
     ]

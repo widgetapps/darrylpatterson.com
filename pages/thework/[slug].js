@@ -40,25 +40,22 @@ const WorkItem= () => {
                         <div>
                             <img className="rounded-lg" src={work.thumbnail.src} alt={work.thumbnail.caption}/>
                         </div>
-                        <div className="mt-10">
+                        <div className="space-y-5 mt-10">
                             {work.images.map(image =>
-                                <div className="">
-                                    <img className="w-32 h-32" className="" src={image.src} alt={image.caption}/>
-                                    <div className="text-xs">{image.caption}</div>
+                                <div className="rounded-lg bg-gray-200">
+                                    <img className="rounded-t-lg" src={image.src} alt={image.caption}/>
+                                    <div className="rounded-b-lg text-xs p-2">{image.caption}</div>
                                 </div>
                             )}
                         </div>
                     </div>
                 </div>
                 <div className="col-span-3">
+                    <h1 className="text-3xl mb-5">{work.title}</h1>
                     <table className="mb-10">
                         <tbody>
                             <tr>
-                                <td className="w-24">The Work:</td>
-                                <td>{work.title}</td>
-                            </tr>
-                            <tr>
-                                <td>The Client:</td>
+                                <td className="w-24">The Client:</td>
                                 <td>{work.client}</td>
                             </tr>
                             <tr>
