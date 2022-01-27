@@ -41,7 +41,7 @@ export default function Contact() {
                         <h2 className="text-base sm:text-lg font-bold">Engineering</h2>
                         <ul className="list-disc text-sm sm:text-base ml-10">
                             <li>Backend coding: NodeJS/ExpressJS, PHP Frameworks, Spring. API design, documentation & implementation</li>
-                            <li>Frontend coding (including prototyping): ReactJS/NextJS, Angular, jQuery, BackboneJS</li>
+                            <li>Frontend coding (including prototyping): ReactJS/NextJS, Angular, TailwindCSS, jQuery, BackboneJS</li>
                             <li>Systems Admin: Cloud Services (GCP & AWS), queuing servers (AMPQ & MQTT), databases (MongoDB & MySQL and others)</li>
                         </ul>
                     </div>
