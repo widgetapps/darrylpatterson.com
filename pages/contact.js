@@ -25,7 +25,7 @@ export default function Contact() {
                     <h1 className="text-2xl mb-5">Wanna make some awesome things together?</h1>
 
                     <div className="mr-10 mb-2 sm:mb-6 mt-5 sm:mt-10 text-sm sm:text-lg">
-                        Here are some of the things I fo to help you and your team succeed.
+                        Here are some of the things I do to help you and your team succeed.
                     </div>
 
                     <div className="mb-4 sm:mb-8">
