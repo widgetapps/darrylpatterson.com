@@ -34,22 +34,24 @@ export default function Contact() {
                             <li>Wireframing: Figma (my pref), Adobe XD, Axure, Visio</li>
                             <li>Flows: Miro, LucidChart, OmniGraffle, Visio</li>
                             <li>Research: User testing, heuristics, interviews, card sorts</li>
+                            <li>Design System Documentation: Atomic Design (atoms, molecules, organisms, templates), styles (colours. typography, shadows, spacing, motion, iconography) and states</li>
                         </ul>
                     </div>
 
                     <div className="mb-4 sm:mb-8">
                         <h2 className="text-base sm:text-lg font-bold">Engineering</h2>
                         <ul className="list-disc text-sm sm:text-base ml-10">
-                            <li>Backend coding: NodeJS/ExpressJS, PHP Frameworks, Spring. API design, documentation & implementation</li>
+                            <li>Engineering Design: API design & documentation, database schemas (SQL & NoSQL), technical requirements as well as structure, behaviour & interaction diagrams with the UML</li>
+                            <li>Backend coding: NodeJS/ExpressJS, PHP Frameworks, Spring, API implementation</li>
                             <li>Frontend coding (including prototyping): ReactJS/NextJS, Angular, TailwindCSS, jQuery, BackboneJS</li>
                             <li>Systems Admin: Cloud Services (GCP & AWS), queuing servers (AMPQ & MQTT), databases (MongoDB & MySQL and others)</li>
                         </ul>
                     </div>
 
                     <div className="mb-4 sm:mb-8">
-                        <h2 className="text-base sm:text-lg font-bold">Tech Leadership</h2>
+                        <h2 className="text-base sm:text-lg font-bold">Technical Leadership</h2>
                         <ul className="list-disc text-sm sm:text-base ml-10">
-                            <li>Managing tech teams: building trust, mentorship, training, team building, open communication</li>
+                            <li>Managing technical teams: building trust, mentorship, training, team building, open communication</li>
                             <li>Streamlining engineering processes: source code management, tooling, CI/CD (delivery & deployment)</li>
                         </ul>
                     </div>

@@ -128,6 +128,12 @@ export default function Layout({ children }) {
                         <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 text-center text-xs">
                             <Link href='https://github.com/widgetapps/darrylpatterson.com'>The code</Link> licensed under an <Link href='/license'>MIT License</Link>
                         </div>
+                        <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 text-center text-xs">
+                            The copy and photography are licensed under a <Link rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</Link>
+                        </div>
+                        <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 text-center text-xs">
+                            Logos are all reserved rights to the original owners.
+                        </div>
                     </footer>
                 </div>
 

@@ -936,5 +936,33 @@
     "type": "tech",
     "role": "UX Design",
     "job": "Job"
+  },
+  {
+    "id": 135,
+    "company": "Gale Partners",
+    "type": "agency",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 136,
+    "company": "MilkPEP",
+    "type": "other",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 137,
+    "company": "Quest Diagnostics",
+    "type": "other",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 138,
+    "company": "Chipotle",
+    "type": "ent",
+    "role": "UX Design",
+    "job": "Job"
   }
 ]
