@@ -121,7 +121,7 @@ export default function Layout({ children }) {
                 </div>
 
                 <div className="py-10">
-                    <footer className='space-y-3'>
+                    <footer className='space-y-3 pb-5'>
                         <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 text-center text-sm">
                             &copy; {(new Date().getFullYear())} Patterson Powered Ltd.
                         </div>
@@ -132,7 +132,7 @@ export default function Layout({ children }) {
                             The copy and photography are licensed under a <Link rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</Link>
                         </div>
                         <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 text-center text-xs">
-                            Logos are all reserved rights to the original owners.
+                            Logos are all rights reserved to the original owners.
                         </div>
                     </footer>
                 </div>
