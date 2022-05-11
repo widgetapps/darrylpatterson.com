@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+main a, footer a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+main a:hover, footer a:hover {
+    color: #FFA91C;
+}
+
+aside svg:hover {
+    fill: #FFA91C;
+}

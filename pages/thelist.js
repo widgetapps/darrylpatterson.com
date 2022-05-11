@@ -1,13 +1,11 @@
 import ListItem from '../components/listitem';
 import {
-    AcademicCapIcon,
     ChipIcon,
     FilmIcon,
     CurrencyDollarIcon,
     LibraryIcon,
     OfficeBuildingIcon,
     ColorSwatchIcon,
-    GlobeIcon,
     CubeIcon,
     ViewGridIcon
 } from "@heroicons/react/solid";

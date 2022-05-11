@@ -7,7 +7,6 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 import logoMark from '../public/ppl_mark.svg';
-import {act} from "react-dom/test-utils";
 
 let activeNav = '';
 

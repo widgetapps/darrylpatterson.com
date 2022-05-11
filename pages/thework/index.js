@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import React from "react";
 import {TemplateIcon} from "@heroicons/react/outline";
 import Head from "next/head";

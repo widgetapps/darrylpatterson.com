@@ -1,15 +1,11 @@
 
 import Image from 'next/image';
-import Link from 'next/link';
 
 import meHoliday from '../public/me/darryl_holiday.jpg';
 import meGeeq from '../public/me/darryl_geeq.jpg';
 import meSailor from '../public/me/darryl_sailor.jpg';
 import meSuspicious from '../public/me/darryl_suspicious.jpg';
 import meViking from '../public/me/darryl_viking.jpg';
-
-import iconLinkedin from '../public/linkedin.svg';
-import iconGithub from '../public/github.svg';
 
 import React from "react";
 

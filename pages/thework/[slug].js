@@ -1,5 +1,4 @@
 import { useRouter } from 'next/router'
-import Image from "next/image";
 import Link from 'next/link';
 import {ArrowSmLeftIcon} from "@heroicons/react/solid";
 import Head from "next/head";
