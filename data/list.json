@@ -964,5 +964,26 @@
     "type": "ent",
     "role": "UX Design",
     "job": "Job"
+  },
+  {
+    "id": 139,
+    "company": "Hard Rock Shop",
+    "type": "ent",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 140,
+    "company": "Unity by Hard Rock",
+    "type": "ent",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 141,
+    "company": "CPP Investments",
+    "type": "finance",
+    "role": "UX Design",
+    "job": "Job"
   }
 ]
