@@ -985,5 +985,12 @@
     "type": "finance",
     "role": "UX Design",
     "job": "Job"
-  }
+  },
+    {
+        "id": 141,
+        "company": "Lumos Fiber",
+        "type": "tech",
+        "role": "UX Design",
+        "job": "Job"
+    }
 ]
