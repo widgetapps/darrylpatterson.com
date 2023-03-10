@@ -986,11 +986,39 @@
     "role": "UX Design",
     "job": "Job"
   },
-    {
-        "id": 141,
-        "company": "Lumos Fiber",
-        "type": "tech",
-        "role": "UX Design",
-        "job": "Job"
-    }
+  {
+      "id": 142,
+      "company": "Lumos Fiber",
+      "type": "tech",
+      "role": "UX Design",
+      "job": "Job"
+  },
+  {
+    "id": 143,
+    "company": "Santander Bank",
+    "type": "finance",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 144,
+    "company": "ParticipACTION App",
+    "type": "other",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 145,
+    "company": "CPPIB",
+    "type": "gov",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 146,
+    "company": "Safelite AutoGlass",
+    "type": "other",
+    "role": "UX Design",
+    "job": "Job"
+  }
 ]
