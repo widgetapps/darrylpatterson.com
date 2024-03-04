@@ -57,7 +57,7 @@ export default function Work() {
                 ))}
             </ul>
             <div className="ml-10 mr-10 mb-8 sm:mb-14 mt-5 sm:mt-10 text-sm sm:text-lg text-center">
-                ** MORE WORK WILL BE POSTED **
+                ** MORE WORK IS AVAILABLE UPON REQUEST **
             </div>
         </div>
     )

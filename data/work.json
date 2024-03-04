@@ -216,7 +216,7 @@
       },
       {
         "header": "Concept Wireframes",
-        "content": "Flows can't fully describe what a UX designer is thinking, so concept wires where often created to better demonstrate the UI. Wires were created in Sketch (and later in Figma) to show some of the more complex layouts. For example, the screen that allows a user to search for homes includes a map, the listings and other supporting data that also had to scale down to mobile screens. Wireframes were used to show how the information in the flows translated to the UI. Many of the flows required conceptual wires that the team used to comment on and helped to improve the experience."
+        "content": "Flows can't fully describe what a UX designer is thinking, so conceptual wires were often created to better demonstrate the UI. Wires were created in Sketch (and later in Figma) to show some of the more complex layouts. For example, the screen that allows a user to search for homes includes a map, the listings and other supporting data that also had to scale down to mobile screens. Wireframes were used to show how the information in the flows translated to the UI. Many of the flows required conceptual wires that the team used to comment on and helped to improve the experience."
       }
     ],
     "thumbnail": {
