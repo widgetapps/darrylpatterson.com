@@ -967,7 +967,7 @@
   },
   {
     "id": 139,
-    "company": "Hard Rock Shop",
+    "company": "Hard Rock - Rock Shop",
     "type": "ent",
     "role": "UX Design",
     "job": "Job"
@@ -1018,6 +1018,13 @@
     "id": 146,
     "company": "Safelite AutoGlass",
     "type": "other",
+    "role": "UX Design",
+    "job": "Job"
+  },
+  {
+    "id": 147,
+    "company": "Hard Rock Hotel & Casino",
+    "type": "ent",
     "role": "UX Design",
     "job": "Job"
   }
