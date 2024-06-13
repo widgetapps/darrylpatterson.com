@@ -57,7 +57,7 @@ export default function Work() {
                 ))}
             </ul>
             <div className="ml-10 mr-10 mb-8 sm:mb-14 mt-5 sm:mt-10 text-sm sm:text-lg text-center">
-                Kindly note that my work is subject to strict NDAs and as a result, I cannot post a portfolio or
+                Kindly note that my work is subject to strict NDAs and as a result, I cannot post a detailed hi-rez portfolio or
                 provide one in a format that I can send out. If you feel I'm a good fit, I'm more than happy to show you
                 my work during an interview.
             </div>
