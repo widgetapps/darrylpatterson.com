@@ -72,7 +72,7 @@ export default function Home() {
               technology has fueled a lifetime of learning, exploration and achievement."</div>
 
           {homeContent.map(item =>
-              <div className="mb-4 sm:mb-8">
+              <div key={item.id} className="mb-4 sm:mb-8">
                   <h2 className="text-base sm:text-lg font-bold">{item.header}</h2>
                   <p className="text-sm sm:text-base">{item.content}</p>
               </div>

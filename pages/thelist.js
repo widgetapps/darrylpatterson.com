@@ -119,6 +119,7 @@ export default function List() {
             <span className="relative z-0 inline-flex shadow-sm rounded-md justify-center">
                 {filters.map(filter =>
                     <button
+                        key={filter.type}
                         type="button"
                         onClick={(e) => applyFilter(filter.type, e)}
                         className={classNames(
@@ -135,10 +136,10 @@ export default function List() {
                 )}
             </span>
 
-            <div className="mt-4 mb-5 font-bold text-sm sm:text-base">Viewing: {activeFilter.display}</div>
+            <div className="mt-4 mb-5 font-bold text-sm sm:text-base">Viewing: {activeFilter.display} ({filteredItems.length})</div>
             <ul role="list" className="mt-3 grid grid-cols-1 gap-5 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {filteredItems.map(listItem =>
-                    <ListItem listItem={listItem}/>
+                    <ListItem key={listItem.id} listItem={listItem}/>
                 )}
             </ul>
         </div>

@@ -38,6 +38,7 @@
     ],
     "images": [
       {
+        "id": 1,
         "src": "/work/this/this_1.png",
         "caption": "Sexy screen shot of code"
       }
@@ -90,14 +91,17 @@
     ],
     "images": [
       {
+        "id": 1,
         "src": "/work/mbna/mbna_1.png",
         "caption": "Application start page"
       },
       {
+        "id": 2,
         "src": "/work/mbna/mbna_2.png",
         "caption": "Employment information section"
       },
       {
+        "id": 3,
         "src": "/work/mbna/mbna_3.png",
         "caption": "Confirmation page"
       }
@@ -152,14 +156,17 @@
     ],
     "images": [
       {
+        "id": 1,
         "src": "/work/dws-iot/dws_1.png",
         "caption": "Incoming messages in RabbitMQ"
       },
       {
+        "id": 2,
         "src": "/work/dws-iot/dws_2.png",
         "caption": "The MQTT dashboard"
       },
       {
+        "id": 3,
         "src": "/work/dws-iot/dws_3.png",
         "caption": "MongoDB Atlas activity"
       }
@@ -239,18 +246,22 @@
     ],
     "images": [
       {
+        "id": 1,
         "src": "/work/onehome/oh_1.png",
         "caption": "Excerpt of an App Map"
       },
       {
+        "id": 2,
         "src": "/work/onehome/oh_2.png",
         "caption": "Excerpt of a user flow"
       },
       {
+        "id": 3,
         "src": "/work/onehome/oh_3.png",
         "caption": "Conceptual wire for comparing homes"
       },
       {
+        "id": 4,
         "src": "/work/onehome/oh_4.png",
         "caption": "UX design based on my wires"
       }
@@ -340,6 +351,7 @@
     ],
     "images": [
       {
+        "id": 1,
         "src": "/",
         "caption": "The image caption"
       }
@@ -373,14 +385,17 @@
     ],
     "images": [
       {
+        "id": 1,
         "src": "/work/prpp/prpp_1.png",
         "caption": "The image caption"
       },
       {
+        "id": 2,
         "src": "/work/prpp/prpp_2.png",
         "caption": "The image caption"
       },
       {
+        "id": 3,
         "src": "/work/prpp/prpp_3.png",
         "caption": "The image caption"
       }
@@ -414,6 +429,7 @@
     ],
     "images": [
       {
+        "id": 1,
         "src": "/",
         "caption": "The image caption"
       }

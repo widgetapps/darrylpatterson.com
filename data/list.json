@@ -1027,5 +1027,12 @@
     "type": "ent",
     "role": "UX Design",
     "job": "Job"
+  },
+  {
+    "id": 148,
+    "company": "Fotona",
+    "type": "other",
+    "role": "UX Design",
+    "job": "Job"
   }
 ]
