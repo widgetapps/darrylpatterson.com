@@ -12,9 +12,16 @@ export default function Work() {
                 <title>Darryl Patterson - The Work</title>
             </Head>
             <div className="bg-head-work bg-center bg-cover flex-grow h-44 sm:rounded-lg"/>
-            <div className="ml-10 mr-10 mb-8 sm:mb-14 mt-5 sm:mt-10 text-sm sm:text-lg">
-                I've been lucky to work on some really great projects and with some really great people. The roles are quite
-                fluid from one to the other - engineering, UX design, leadership, strategy, prototyping, branding, research.
+            <div className="ml-10 mr-10 mb-4 sm:mb-4 mt-5 sm:mt-10 text-sm sm:text-lg">
+                I've been fortunate to work on some great projects and with some great people. The roles have been quite
+                fluid from one to the other - engineering, UX design, leadership, strategy, prototyping, branding,
+                research.
+            </div>
+            <div className="ml-10 mr-10 mb-4 sm:mb-4 text-sm sm:text-lg italic">
+                Please note that my work is subject to strict NDAs and as a result, I cannot publicly post a portfolio
+                of recent work. A password protected portfolio of my recent work in Figma is available upon request.
+            </div>
+            <div className="ml-10 mr-10 mb-8 sm:mb-14 text-sm sm:text-lg">
                 Here are some of my favourites.
             </div>
             <ul role="list" className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -24,7 +31,7 @@ export default function Work() {
                         className="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200"
                     >
                         <div className="flex-1 flex flex-col p-8">
-                            <img className="rounded-lg mx-auto" src={work.thumbnail.src} alt={work.thumbnail.caption} />
+                            <img className="rounded-lg mx-auto" src={work.thumbnail.src} alt={work.thumbnail.caption}/>
                             <h3 className="mt-6 text-gray-900 text-sm font-medium">{work.title}</h3>
                             <dl className="mt-1 flex-grow flex flex-col justify-between">
                                 <dt className="sr-only">Title</dt>
@@ -47,7 +54,7 @@ export default function Work() {
                                         href={`/thework/${work.slug}`}
                                         className="relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-bl-lg hover:text-gray-500"
                                     >
-                                        <TemplateIcon className="w-5 h-5 text-gray-400" aria-hidden="true" />
+                                        <TemplateIcon className="w-5 h-5 text-gray-400" aria-hidden="true"/>
                                         <span className="ml-3">View Details</span>
                                     </a>
                                 </div>
@@ -56,10 +63,6 @@ export default function Work() {
                     </li>
                 ))}
             </ul>
-            <div className="ml-10 mr-10 mb-8 sm:mb-14 mt-5 sm:mt-10 text-sm sm:text-lg text-center">
-                Kindly note that my work is subject to strict NDAs and as a result, I cannot publicly post a portfolio
-                of recent work. A password protected Figma portfolio of my recent work is available upon request.
-            </div>
         </div>
     )
 }
