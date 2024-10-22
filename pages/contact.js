@@ -63,7 +63,7 @@ export default function Contact() {
                        <Link href="mailto:darryl@pattersonpowered.com">darryl@pattersonpowered.com</Link>
                     </div>
                     <div>
-                        <Link href="tel:+14167866116">(416) 786-6116</Link>
+                        <Link href="tel:+17059102649">(705) 910-2649</Link>
                     </div>
                     <div className="mt-4">Sault Ste Marie, ON CANADA</div>
                 </div>
