@@ -114,7 +114,7 @@
     "title": "IIoT Stack",
     "client": "Digital Water Solutions Inc.",
     "overview": "DWS makes a smart hydrant insert that can detect leaks, physical tampering and water temperature. The inserts are installed into existing hydrants and the hydrants remain in service once installed. The sensors (pressure, hydrophone, temperature) are in a stainless steel enclosure below the hydrant valve allowing constant monitoring of the municipal water system. I designed & coded the system to receive, process and store telemetry as well as the RESTful API. I also setup and maintained the hosting infrastructure.",
-    "role": "Engineering",
+    "role": "Engineering & UX Design",
     "when": "2016-2021",
     "tldr": [
       {

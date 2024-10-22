@@ -44,7 +44,7 @@ export default function Contact() {
                         <ul className="list-disc text-sm sm:text-base ml-10">
                             <li>Engineering Design: API design & documentation, database schemas (SQL & NoSQL), technical requirements as well as structure, behaviour & interaction diagrams with the UML</li>
                             <li>Backend coding: NodeJS/ExpressJS, PHP Frameworks, Spring, API implementation</li>
-                            <li>Frontend coding (including prototyping): ReactJS/NextJS, Angular, TailwindCSS, jQuery, BackboneJS</li>
+                            <li>Frontend coding (including prototyping): ReactJS/NextJS, TailwindCSS, jQuery, BackboneJS</li>
                             <li>Systems Admin: Cloud Services (GCP & AWS), queuing servers (AMPQ & MQTT), databases (MongoDB & MySQL and others)</li>
                         </ul>
                     </div>
