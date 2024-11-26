@@ -42,10 +42,11 @@ export default function Contact() {
                     <div className="mb-4 sm:mb-8">
                         <h2 className="text-base sm:text-lg font-bold">Engineering</h2>
                         <ul className="list-disc text-sm sm:text-base ml-10">
-                            <li>Engineering Design: API design & documentation, database schemas (SQL & NoSQL), technical requirements as well as structure, behaviour & interaction diagrams with the UML</li>
+                            <li>Engineering Design: API design &amp; documentation, database schemas (SQL &amp; NoSQL), technical requirements as well as structure, behaviour &apm; interaction diagrams with the UML</li>
+                            <li>Data Visualization: Data consilation &amp; normalization, charts, graphs, Business Intelligence Tools (Looker, Tableau, DOMO, ThoughtSpot)</li>
                             <li>Backend coding: NodeJS/ExpressJS, PHP Frameworks, Spring, API implementation</li>
                             <li>Frontend coding (including prototyping): ReactJS/NextJS, TailwindCSS, jQuery, BackboneJS</li>
-                            <li>Systems Admin: Cloud Services (GCP & AWS), queuing servers (AMPQ & MQTT), databases (MongoDB & MySQL and others)</li>
+                            <li>Systems Admin: Cloud Services (GCP &amp; AWS), queuing servers (AMPQ &amp; MQTT), databases (MongoDB &amp; MySQL and others)</li>
                         </ul>
                     </div>
 
@@ -53,7 +54,7 @@ export default function Contact() {
                         <h2 className="text-base sm:text-lg font-bold">Leadership</h2>
                         <ul className="list-disc text-sm sm:text-base ml-10">
                             <li>Team management: building trust, mentorship, training, team building, open communication</li>
-                            <li>Streamlining processes: Design ops, source code management, tooling, CI/CD (delivery & deployment)</li>
+                            <li>Streamlining processes: Design ops, source code management, tooling, CI/CD (delivery &amp; deployment)</li>
                         </ul>
                     </div>
 
