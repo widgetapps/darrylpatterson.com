@@ -122,7 +122,7 @@ export default function Layout({ children }) {
                 <div className="py-10">
                     <footer className='space-y-3 pb-5'>
                         <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 text-center text-sm">
-                            &copy; {(new Date().getFullYear())} Patterson Powered Ltd.
+                            &copy; {(new Date().getFullYear())} Darryl Patterson
                         </div>
                         <div className="max-w-7xl mx-auto sm:px-6 lg:px-8 text-center text-xs">
                             <Link href='https://github.com/widgetapps/darrylpatterson.com'>The code</Link> licensed under an <Link href='/license'>MIT License</Link>

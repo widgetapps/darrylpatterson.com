@@ -61,7 +61,7 @@ export default function Contact() {
                     <h2 className="text-base sm:text-lg font-bold">Get in touch</h2>
                     <div className="text-lg">Darryl Patterson</div>
                     <div>
-                       <Link href="mailto:darryl@pattersonpowered.com">darryl@pattersonpowered.com</Link>
+                       <Link href="mailto:darryl@pattersons.net">darryl@pattersons.net</Link>
                     </div>
                     <div>
                         <Link href="tel:+17059102649">(416) 786-6116</Link>
