@@ -39,7 +39,8 @@ anything merges to `main` (QA-5).
 ## Conventions
 
 - Server components by default. `"use client"` only for the hero's weather
-  repaint, the nav's current-page marker and the company list filter (TECH-1).
+  repaint, the nav's current-page marker, the company list filter and the
+  cross-fading photo strip (TECH-1).
 - No raw colours outside `tokens.css`; use the Tailwind utilities
   (`bg-surface`, `text-ink-muted`, `text-h2`) or `var(--dp-*)` in SVG.
 - Copy lives in `content/*.json`, never in components. Sentence case, no

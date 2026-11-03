@@ -182,9 +182,19 @@
 .hero-snow-far { animation: dp-fall 14s linear infinite; }
 .hero-snow-near { animation: dp-fall 6s linear infinite; }
 .hero-bolt { animation: dp-flash 14s linear infinite; }
+
+/* About photo strip: the incoming photo fades over the current one. */
+@keyframes dp-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.photo-fade-in { animation: dp-fade-in 1.6s ease-in-out both; }
 .hero-star { animation: dp-twinkle 4s ease-in-out infinite; }
 @media (prefers-reduced-motion: reduce) {
   .hero-cloud-a, .hero-cloud-b, .hero-cloud-c, .hero-rain, .hero-snow-far, .hero-snow-near, .hero-bolt, .hero-star {
+    animation: none;
+  }
+  .photo-fade-in {
     animation: none;
   }
 }
