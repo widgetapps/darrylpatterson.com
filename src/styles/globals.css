@@ -153,18 +153,19 @@
   }
 }
 
-/* Living hero motion: subtle, and off under reduced motion (DSN-7, HERO-9). */
+/* Living hero motion: subtle, and off under reduced motion (DSN-7, HERO-9).
+   Drifting and falling layers are drawn twice, one frame apart, so the loops are seamless. */
 @keyframes dp-drift {
   from { transform: translateX(0); }
-  to { transform: translateX(60px); }
-}
-@keyframes dp-drift-back {
-  from { transform: translateX(0); }
-  to { transform: translateX(-40px); }
+  to { transform: translateX(1200px); }
 }
 @keyframes dp-fall {
-  from { transform: translateY(-40px); }
-  to { transform: translateY(560px); }
+  from { transform: translateY(0); }
+  to { transform: translateY(520px); }
+}
+@keyframes dp-sway {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(14px); }
 }
 @keyframes dp-flash {
   0%, 92%, 100% { opacity: 0; }
@@ -174,14 +175,16 @@
   0%, 100% { opacity: 0.5; }
   50% { opacity: 1; }
 }
-.hero-cloud-a { animation: dp-drift 90s linear infinite alternate; }
-.hero-cloud-b { animation: dp-drift-back 120s linear infinite alternate; }
-.hero-precip { animation: dp-fall 7s linear infinite; }
-.hero-precip-2 { animation: dp-fall 9s linear infinite; animation-delay: -4s; }
+.hero-cloud-a { animation: dp-drift 240s linear infinite; }
+.hero-cloud-b { animation: dp-drift 320s linear infinite; }
+.hero-cloud-c { animation: dp-drift 420s linear infinite; }
+.hero-rain { animation: dp-fall 1.1s linear infinite; }
+.hero-snow-far { animation: dp-fall 14s linear infinite; }
+.hero-snow-near { animation: dp-fall 6s linear infinite; }
 .hero-bolt { animation: dp-flash 14s linear infinite; }
 .hero-star { animation: dp-twinkle 4s ease-in-out infinite; }
 @media (prefers-reduced-motion: reduce) {
-  .hero-cloud-a, .hero-cloud-b, .hero-precip, .hero-precip-2, .hero-bolt, .hero-star {
+  .hero-cloud-a, .hero-cloud-b, .hero-cloud-c, .hero-rain, .hero-snow-far, .hero-snow-near, .hero-bolt, .hero-star {
     animation: none;
   }
 }

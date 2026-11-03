@@ -7,6 +7,68 @@
 import { useId } from "react";
 import { sceneFor, type SceneState } from "@/lib/scene";
 
+/** Deterministic pseudo-random so the server and client draw the same drops. */
+function seeded(seed: number) {
+  let x = seed;
+  return () => {
+    x = (x * 1664525 + 1013904223) % 4294967296;
+    return x / 4294967296;
+  };
+}
+
+type Drop = { x: number; y: number; r: number };
+function scatter(count: number, seed: number, rMin = 1, rMax = 1): Drop[] {
+  const rnd = seeded(seed);
+  return Array.from({ length: count }, () => ({
+    x: Math.round(rnd() * 1200),
+    y: Math.round(rnd() * 520),
+    r: Math.round((rMin + rnd() * (rMax - rMin)) * 10) / 10,
+  }));
+}
+
+const RAIN = scatter(90, 7);
+const SNOW_FAR = scatter(70, 11, 1.5, 3);
+const SNOW_NEAR = scatter(14, 23, 7, 12);
+
+/** A six-arm snowflake centred on 0,0 with arm length r. */
+function flakePath(r: number): string {
+  const arms: string[] = [];
+  for (let i = 0; i < 6; i++) {
+    const a = (i * Math.PI) / 3;
+    const x = Math.cos(a) * r;
+    const y = Math.sin(a) * r;
+    arms.push(`M0 0 L${x.toFixed(1)} ${y.toFixed(1)}`);
+    // Two short branches two thirds of the way out.
+    const bx = Math.cos(a) * r * 0.62;
+    const by = Math.sin(a) * r * 0.62;
+    for (const d of [-1, 1]) {
+      const ba = a + (d * Math.PI) / 5;
+      arms.push(`M${bx.toFixed(1)} ${by.toFixed(1)} L${(bx + Math.cos(ba) * r * 0.3).toFixed(1)} ${(by + Math.sin(ba) * r * 0.3).toFixed(1)}`);
+    }
+  }
+  return arms.join(" ");
+}
+
+/** A layer drawn twice, one frame-height apart, so a translateY loop is seamless. */
+function FallingTile({ className, style, children }: { className: string; style: React.CSSProperties; children: React.ReactNode }) {
+  return (
+    <g className={className} style={style}>
+      <g>{children}</g>
+      <g transform="translate(0 -520)">{children}</g>
+    </g>
+  );
+}
+
+/** A layer drawn twice, one frame-width apart, so a translateX loop is seamless. */
+function DriftingTile({ className, style, children }: { className: string; style: React.CSSProperties; children: React.ReactNode }) {
+  return (
+    <g className={className} style={style}>
+      <g>{children}</g>
+      <g transform="translate(-1200 0)">{children}</g>
+    </g>
+  );
+}
+
 export function HeroScene(state: SceneState) {
   const s = sceneFor(state);
   const star = "fill-[var(--dp-moon)]";
@@ -44,25 +106,27 @@ export function HeroScene(state: SceneState) {
 
       {s.clouds ? (
         <>
-          <g className="hero-cloud-a" style={{ fill: s.cloud }}>
+          <DriftingTile className="hero-cloud-a" style={{ fill: s.cloud }}>
             <ellipse cx="260" cy="130" rx="110" ry="34" />
             <ellipse cx="300" cy="105" rx="70" ry="40" />
             <ellipse cx="210" cy="115" rx="60" ry="32" />
-          </g>
-          <g className="hero-cloud-b" style={{ fill: s.cloud }}>
+            <ellipse cx="980" cy="178" rx="90" ry="22" />
+            <ellipse cx="1010" cy="164" rx="50" ry="24" />
+          </DriftingTile>
+          <DriftingTile className="hero-cloud-b" style={{ fill: s.cloud }}>
             <ellipse cx="700" cy="90" rx="130" ry="30" />
             <ellipse cx="740" cy="70" rx="80" ry="36" />
             <ellipse cx="650" cy="78" rx="60" ry="28" />
-          </g>
+          </DriftingTile>
         </>
       ) : null}
       {s.heavyClouds ? (
-        <g className="hero-cloud-a" style={{ fill: s.cloud }}>
+        <DriftingTile className="hero-cloud-c" style={{ fill: s.cloud }}>
           <ellipse cx="200" cy="90" rx="200" ry="50" />
           <ellipse cx="560" cy="60" rx="240" ry="60" />
           <ellipse cx="900" cy="100" rx="220" ry="52" />
           <ellipse cx="1150" cy="70" rx="180" ry="48" />
-        </g>
+        </DriftingTile>
       ) : null}
 
       {/* Far hills */}
@@ -140,40 +204,24 @@ export function HeroScene(state: SceneState) {
       {s.night ? <rect x="0" y="250" width="1200" height="270" style={{ fill: "var(--dp-sky-night)", opacity: 0.45 }} /> : null}
 
       {s.rain ? (
-        <>
-          <g className="hero-precip" style={{ stroke: "var(--dp-rain)", strokeWidth: 2, strokeLinecap: "round" }}>
-            <path d="M60 0 L52 26 M180 40 L172 66 M300 10 L292 36 M420 50 L412 76 M540 0 L532 26 M660 30 L652 56 M780 10 L772 36 M900 60 L892 86 M1020 20 L1012 46 M1140 40 L1132 66" />
-          </g>
-          <g className="hero-precip-2" style={{ stroke: "var(--dp-rain)", strokeWidth: 2, strokeLinecap: "round" }}>
-            <path d="M120 100 L112 126 M240 140 L232 166 M360 110 L352 136 M480 150 L472 176 M600 100 L592 126 M720 130 L712 156 M840 110 L832 136 M960 160 L952 186 M1080 120 L1072 146" />
-          </g>
-        </>
+        <FallingTile className="hero-rain" style={{ stroke: "var(--dp-rain)", strokeWidth: 1.5, strokeLinecap: "round", opacity: 0.8 }}>
+          {RAIN.map((d, i) => (
+            <path key={i} d={`M${d.x} ${d.y} l-5 18`} />
+          ))}
+        </FallingTile>
       ) : null}
       {s.snow ? (
         <>
-          <g className="hero-precip" style={{ fill: "var(--dp-snow)" }}>
-            <circle cx="60" cy="10" r="3" />
-            <circle cx="180" cy="50" r="2.5" />
-            <circle cx="300" cy="20" r="3" />
-            <circle cx="420" cy="70" r="2" />
-            <circle cx="540" cy="5" r="3" />
-            <circle cx="660" cy="40" r="2.5" />
-            <circle cx="780" cy="15" r="3" />
-            <circle cx="900" cy="80" r="2" />
-            <circle cx="1020" cy="30" r="3" />
-            <circle cx="1140" cy="55" r="2.5" />
-          </g>
-          <g className="hero-precip-2" style={{ fill: "var(--dp-snow)" }}>
-            <circle cx="120" cy="120" r="2.5" />
-            <circle cx="240" cy="160" r="3" />
-            <circle cx="360" cy="130" r="2" />
-            <circle cx="480" cy="170" r="3" />
-            <circle cx="600" cy="110" r="2.5" />
-            <circle cx="720" cy="150" r="3" />
-            <circle cx="840" cy="125" r="2" />
-            <circle cx="960" cy="180" r="3" />
-            <circle cx="1080" cy="140" r="2.5" />
-          </g>
+          <FallingTile className="hero-snow-far" style={{ fill: "var(--dp-snow)", opacity: 0.9 }}>
+            {SNOW_FAR.map((d, i) => (
+              <circle key={i} cx={d.x} cy={d.y} r={d.r} />
+            ))}
+          </FallingTile>
+          <FallingTile className="hero-snow-near" style={{ stroke: "var(--dp-snow)", strokeWidth: 2, strokeLinecap: "round", fill: "none" }}>
+            {SNOW_NEAR.map((d, i) => (
+              <path key={i} transform={`translate(${d.x} ${d.y}) rotate(${(i * 37) % 60})`} d={flakePath(d.r)} />
+            ))}
+          </FallingTile>
         </>
       ) : null}
       {s.storm ? (
