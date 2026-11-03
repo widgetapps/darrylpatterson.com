@@ -147,7 +147,10 @@ export const listSchema = z
       role: z.string(),
     }),
   )
-  .length(148);
+  .length(148)
+  .refine((rows) => new Set(rows.map((r) => r.id)).size === rows.length, {
+    message: "Company ids must be unique (they are React keys)",
+  });
 
 export const notFoundSchema = z.object({
   title: z.string(),

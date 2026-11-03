@@ -12,6 +12,7 @@ describe("content", () => {
     expect(contact.offers[0].heading).toBe("AI and automation");
     expect(work).toHaveLength(3);
     expect(list).toHaveLength(148);
+    expect(new Set(list.map((r) => r.id)).size).toBe(148);
     expect(notFound.links[0].href).toBe("/");
   });
 
