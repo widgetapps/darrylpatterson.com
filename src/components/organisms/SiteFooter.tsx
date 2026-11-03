@@ -5,7 +5,7 @@
 import Link from "next/link";
 import { GooseMark } from "@/components/atoms/GooseMark";
 import { Icon } from "@/components/atoms/Icon";
-import { Meta } from "@/components/atoms/Meta";
+import { MadeIn } from "@/components/molecules/MadeIn";
 import { site } from "@/lib/content";
 
 export function SiteFooter() {
@@ -25,7 +25,7 @@ export function SiteFooter() {
           <p className="text-on-inverse-muted">
             {site.footer.weatherCredit} The <a href={site.repo}>code is on GitHub</a>.
           </p>
-          <Meta inverse>{site.locationShort}</Meta>
+          <MadeIn />
         </div>
         <nav aria-label="Elsewhere" className="flex flex-col gap-2">
           <a href={site.social.github} className="inline-flex min-h-11 items-center gap-2">
