@@ -37,7 +37,7 @@ Decide the layer before creating a file and record it here.
 | molecules | `AppCard`, `CaseCard`, `PullQuote`, `CtaStrip`, `PhotoStrip`, `FactGrid`, `NavLinks`, `CompanyList` | a few atoms with one job; may be client |
 | organisms | `SiteHeader`, `SiteFooter`, `LivingHero` + `LivingHeroClient` + `HeroScene`, `EvidenceCards`, `OgCard` | a section of a page; may read content |
 | templates | `Page` (`ContentPage`, `ProsePage`, `PageIntro`) | frames that own the `<main>` landmark |
-| pages | `src/app/**/page.tsx`, `not-found.tsx` | compose organisms from content |
+| pages | `src/app/**/page.tsx`, `not-found.tsx`, `hero-gallery` (dev only) | compose organisms from content |
 
 ## Requirement IDs
 

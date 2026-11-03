@@ -30,6 +30,9 @@ pnpm photos         # re-export photos under public/me and public/photos (MIG-1)
 pnpm screenshots    # fresh screenshots of the two apps into public/apps (CNT-2)
 ```
 
+While `pnpm dev` runs, `/hero-gallery` shows all 64 states of the living
+hero (seasons, conditions, day and night). It is a 404 in production.
+
 `pnpm verify` and `pnpm test:e2e` pass before a task is reported done or
 anything merges to `main` (QA-5).
 
