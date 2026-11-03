@@ -1,9 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { ButtonLink } from "@/components/atoms/Button";
 import { Heading } from "@/components/atoms/Heading";
-import { Icon } from "@/components/atoms/Icon";
 import { AppCard } from "@/components/molecules/AppCard";
 import { CtaStrip } from "@/components/molecules/CtaStrip";
 import { PullQuote } from "@/components/molecules/PullQuote";
@@ -99,22 +97,7 @@ export default function HomePage() {
       </section>
 
       <section className={section}>
-        <CtaStrip
-          id="contact"
-          heading={home.cta.heading}
-          text={home.cta.text}
-          actions={
-            <>
-              <ButtonLink href={`mailto:${site.contact.email}`}>
-                <Icon name="mail" size={24} />
-                Email me
-              </ButtonLink>
-              <ButtonLink href="/contact" variant="secondary">
-                Get in touch
-              </ButtonLink>
-            </>
-          }
-        />
+        <CtaStrip id="contact" heading={home.cta.heading} text={home.cta.text} />
       </section>
     </main>
   );
