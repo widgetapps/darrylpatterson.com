@@ -1,0 +1,11 @@
+{
+  "title": "Page not found",
+  "meta": "404 · not found",
+  "heading": "That page flew south.",
+  "text": "The old site had more pages than this one. If you followed a link from somewhere else, the thing you wanted is probably on one of these.",
+  "links": [
+    { "label": "Go home", "href": "/", "primary": true },
+    { "label": "Read On AI", "href": "/ai" },
+    { "label": "Get in touch", "href": "/contact" }
+  ]
+}

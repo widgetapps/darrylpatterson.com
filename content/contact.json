@@ -1,0 +1,13 @@
+{
+  "title": "Get in touch",
+  "description": "What Darryl Patterson can do for you: AI and automation, user experience, engineering and leadership. Email, phone and location.",
+  "lead": "Tell me about the problem, not the solution. If I can help, I will say how. If I cannot, I will say who might.",
+  "offersHeading": "What I can do for you",
+  "offers": [
+    { "heading": "AI and automation", "text": "Finding the useful thing in your business that is worth building, then building it with AI coding agents: internal tools, integrations, the app nobody would fund. And honest advice on where AI does not belong." },
+    { "heading": "User experience", "text": "Research, information architecture, flows, wireframes and prototypes, design systems. Accessible by default, to WCAG 2.2 AA." },
+    { "heading": "Engineering", "text": "API and schema design, Node and Next, data pipelines and telemetry, cloud on GCP and AWS. Code that someone else can read in a year." },
+    { "heading": "Leadership", "text": "Building and mentoring teams, design and engineering process, source control and delivery. Thirty-five years of having seen it go both ways." }
+  ],
+  "reachHeading": "Reach me"
+}

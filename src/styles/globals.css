@@ -1,0 +1,187 @@
+@import "tailwindcss";
+@import "./tokens.css";
+
+/*
+ * Tailwind theme mapped to the design tokens. Colours resolve to the CSS
+ * variables in tokens.css so the dark theme swaps at runtime (DSN-3).
+ * Tailwind's own palette is removed: if a utility is not in the system, it
+ * does not exist (DSN-10).
+ */
+@theme inline {
+  --color-*: initial;
+  --color-surface: var(--dp-surface);
+  --color-surface-raised: var(--dp-surface-raised);
+  --color-surface-sunken: var(--dp-surface-sunken);
+  --color-surface-panel: var(--dp-surface-panel);
+  --color-surface-inverse: var(--dp-surface-inverse);
+  --color-on-inverse: var(--dp-on-inverse);
+  --color-on-inverse-muted: var(--dp-on-inverse-muted);
+  --color-ink: var(--dp-ink);
+  --color-ink-muted: var(--dp-ink-muted);
+  --color-line: var(--dp-line);
+  --color-line-strong: var(--dp-line-strong);
+  --color-goose: var(--dp-goose);
+  --color-goose-ink: var(--dp-goose-ink);
+  --color-on-goose: var(--dp-on-goose);
+  --color-goose-body: var(--dp-goose-body);
+  --color-link: var(--dp-link);
+  --color-focus-ring: var(--dp-focus-ring);
+  --color-focus-ring-inverse: var(--dp-focus-ring-inverse);
+
+  --font-display: var(--font-raleway), "Avenir Next", system-ui, sans-serif;
+  --font-sans: var(--font-source-sans), "Segoe UI", system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, "SF Mono", Menlo, monospace;
+
+  --text-display-1: 56px;
+  --text-display-1--line-height: 60px;
+  --text-display-1--letter-spacing: -0.01em;
+  --text-display-1--font-weight: 800;
+  --text-h1: 40px;
+  --text-h1--line-height: 46px;
+  --text-h1--letter-spacing: -0.01em;
+  --text-h1--font-weight: 800;
+  --text-h2: 28px;
+  --text-h2--line-height: 34px;
+  --text-h2--font-weight: 700;
+  --text-h3: 22px;
+  --text-h3--line-height: 28px;
+  --text-h3--font-weight: 700;
+  --text-quote: 22px;
+  --text-quote--line-height: 30px;
+  --text-quote--font-weight: 500;
+  --text-lead: 21px;
+  --text-lead--line-height: 32px;
+  --text-body: 18px;
+  --text-body--line-height: 28px;
+  --text-body-sm: 16px;
+  --text-body-sm--line-height: 24px;
+  --text-label: 14px;
+  --text-label--line-height: 20px;
+  --text-label--letter-spacing: 0.02em;
+  --text-label--font-weight: 600;
+  --text-ui: 16px;
+  --text-ui--line-height: 22px;
+  --text-ui--font-weight: 600;
+  --text-code: 15px;
+  --text-code--line-height: 24px;
+  --text-meta: 13px;
+  --text-meta--line-height: 20px;
+  --text-meta--letter-spacing: 0.01em;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+
+  --shadow-raised: var(--dp-shadow-raised);
+
+  --container-content: 1120px;
+  --container-prose: 720px;
+
+  --breakpoint-md: 54rem;
+}
+
+@layer base {
+  html {
+    background: var(--dp-surface);
+    color: var(--dp-ink);
+    font-family: var(--font-sans);
+    font-size: 18px;
+    line-height: 28px;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  /* Links are underlined in running text and say where they go (A11Y-9). */
+  a {
+    color: var(--dp-link);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  a:hover {
+    text-decoration-thickness: 2px;
+  }
+  /* Visible focus everywhere: 3px solid, 2px offset (A11Y-2). */
+  :focus-visible {
+    outline: 3px solid var(--dp-focus-ring);
+    outline-offset: 2px;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  button {
+    font: inherit;
+    color: inherit;
+  }
+}
+
+@utility on-inverse-links {
+  & a {
+    color: var(--dp-on-inverse);
+  }
+  & a:focus-visible,
+  & button:focus-visible {
+    outline-color: var(--dp-focus-ring-inverse);
+  }
+}
+
+/* The skip link sits first in the DOM and appears on focus (A11Y-3). */
+@utility skip-link {
+  position: absolute;
+  left: 16px;
+  top: -80px;
+  z-index: 50;
+  padding: 12px 16px;
+  background: var(--dp-surface-raised);
+  color: var(--dp-ink);
+  border-radius: var(--radius-md);
+  &:focus-visible {
+    top: 12px;
+  }
+}
+
+/* Living hero motion: subtle, and off under reduced motion (DSN-7, HERO-9). */
+@keyframes dp-drift {
+  from { transform: translateX(0); }
+  to { transform: translateX(60px); }
+}
+@keyframes dp-drift-back {
+  from { transform: translateX(0); }
+  to { transform: translateX(-40px); }
+}
+@keyframes dp-fall {
+  from { transform: translateY(-40px); }
+  to { transform: translateY(560px); }
+}
+@keyframes dp-flash {
+  0%, 92%, 100% { opacity: 0; }
+  94%, 97% { opacity: 1; }
+}
+@keyframes dp-twinkle {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+.hero-cloud-a { animation: dp-drift 90s linear infinite alternate; }
+.hero-cloud-b { animation: dp-drift-back 120s linear infinite alternate; }
+.hero-precip { animation: dp-fall 7s linear infinite; }
+.hero-precip-2 { animation: dp-fall 9s linear infinite; animation-delay: -4s; }
+.hero-bolt { animation: dp-flash 14s linear infinite; }
+.hero-star { animation: dp-twinkle 4s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .hero-cloud-a, .hero-cloud-b, .hero-precip, .hero-precip-2, .hero-bolt, .hero-star {
+    animation: none;
+  }
+}

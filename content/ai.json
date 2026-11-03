@@ -1,0 +1,67 @@
+{
+  "title": "On AI",
+  "description": "AI should be used for useful things, not frivolous ones. And it lets useful things exist that funding and timelines used to kill. An essay by Darryl Patterson.",
+  "meta": "Essay · Sault Ste. Marie · 2026",
+  "lead": "AI should be used for useful things, not frivolous ones. And it lets useful things exist that funding and timelines used to kill.",
+  "sections": [
+    {
+      "id": "waves",
+      "heading": "The waves I have seen",
+      "paragraphs": [
+        "I got onto the web in 1993, when a page was a text file and a form was an event. I was there for the first browsers, the first content management systems, the first mobile sites, the cloud and the app stores. Each wave came with the same two crowds: the ones who said it would change everything, and the ones who said it was a toy.",
+        "Both were usually wrong in the same way. The tools changed. What good work looked like did not."
+      ]
+    },
+    {
+      "id": "changes",
+      "heading": "What AI changes",
+      "paragraphs": [
+        "The cost of building a careful piece of software has fallen through the floor. Not the cost of deciding what to build, or of knowing whether it is right. The cost of typing it out, trying it, fixing it and trying again.",
+        "That matters because most useful software never got built. It was not worth an agency quote or a venture round. A small choir, a regional events board, a municipality with one person on the website: these were never going to be anyone's product."
+      ]
+    },
+    {
+      "id": "does-not-change",
+      "heading": "What it does not change",
+      "paragraphs": [
+        "Judgment. Taste. Accountability. An AI coding agent will confidently write the wrong thing, and it will write it beautifully. Someone still has to know what good looks like, read what came back, test it and sign their name to it.",
+        "It also does not change the duties around data. Where it goes, who can see it, what is kept. I treat those as my problem, not the tool's."
+      ]
+    },
+    {
+      "id": "useful",
+      "heading": "Useful versus frivolous",
+      "quote": "AI should be used for useful things, not the frivolous.",
+      "paragraphs": [
+        "A thing is useful when it solves a problem someone actually has, for people who would otherwise go without. It is frivolous when its main purpose is to be seen using AI. I am not interested in the second kind, and I think most people can tell the difference within a minute of using something."
+      ]
+    },
+    {
+      "id": "experience",
+      "heading": "Why thirty-five years matter more now, not less",
+      "paragraphs": [
+        "When the typing is cheap, the deciding is what you are paying for. Knowing how a business actually runs, what a user will and will not put up with, where a schema will hurt in three years, and when to say no: none of that comes from the model. It comes from having built it, taught it and fixed it for a long time."
+      ]
+    },
+    {
+      "id": "evidence",
+      "heading": "The evidence",
+      "paragraphs": [
+        "Two things I built this way, working with AI coding agents, alongside a day job. I designed them, reviewed every line, tested them and shipped them."
+      ],
+      "evidence": true
+    },
+    {
+      "id": "method",
+      "heading": "How I work with it",
+      "paragraphs": [
+        "I write the requirements first, with IDs, and the tests that prove them. The agent builds against those. I read the diff like I would read a junior developer's, except faster and with less patience. Anything that touches data, money or accessibility gets a second look by hand. The commit carries the requirement it serves, so a year from now I can tell why a line exists.",
+        "That is the whole method. It is not clever. It is the same discipline I taught at night school for ten years, with a much faster pair of hands."
+      ]
+    }
+  ],
+  "cta": {
+    "heading": "Disagree? Have a problem like these?",
+    "text": "Either way, I would like to hear it."
+  }
+}

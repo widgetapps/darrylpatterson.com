@@ -1,0 +1,91 @@
+/*
+ * Design tokens for darrylpatterson.com, mapped one to one from the
+ * "Darryl Patterson" design system (DSN-2, TECH-2).
+ *
+ * This is the only file in the repo allowed to hold raw colour values
+ * (DSN-10); `pnpm lint:tokens` enforces it. Light is the default and dark
+ * follows the visitor's system setting, with no toggle and nothing stored
+ * (DSN-3).
+ */
+
+:root {
+  color-scheme: light dark;
+
+  /* Surfaces and ink */
+  --dp-surface: #f8f3ea;
+  --dp-surface-raised: #fffcf5;
+  --dp-surface-sunken: #efe7d9;
+  --dp-surface-panel: #f8f3eaeb;
+  --dp-surface-inverse: #000614;
+  --dp-on-inverse: #f8f3ea;
+  --dp-on-inverse-muted: #b3aea3;
+  --dp-ink: #121420;
+  --dp-ink-muted: #5b5c66;
+  --dp-line: #ddd4c4;
+  --dp-line-strong: #7c7566;
+
+  /* The one accent, drawn from the goose's wing */
+  --dp-goose: #ffa91c;
+  --dp-goose-ink: #8a5300;
+  --dp-on-goose: #121420;
+  --dp-goose-body: #000614;
+  --dp-link: var(--dp-goose-ink);
+
+  /* Focus */
+  --dp-focus-ring: #1f4e79;
+  --dp-focus-ring-inverse: #ffa91c;
+
+  /* Shadow */
+  --dp-shadow-raised: 0 1px 2px rgba(18, 20, 32, 0.08), 0 8px 24px rgba(18, 20, 32, 0.06);
+
+  /* Living hero scene palette, the same in both themes */
+  --dp-sky-day: #9ec5e6;
+  --dp-sky-day-deep: #5e97c4;
+  --dp-sky-night: #0d1b33;
+  --dp-sky-night-horizon: #243a5e;
+  --dp-sky-overcast: #b7bcc2;
+  --dp-sky-storm: #5a6472;
+  --dp-sky-fog: #d9dcdd;
+  --dp-sky-night-grey: #2a2f38;
+  --dp-sun: #ffd166;
+  --dp-moon: #f1e9d2;
+  --dp-cloud: #f4f1ea;
+  --dp-cloud-dark: #8e949c;
+  --dp-rain: #6f8fb0;
+  --dp-snow: #f8f8f8;
+  --dp-lightning: #ffe08a;
+  --dp-water: #2f5d73;
+  --dp-water-night: #10243a;
+  --dp-water-ice: #c6d6e0;
+  --dp-conifer: #2d5a3d;
+  --dp-conifer-dark: #1e3f2c;
+  --dp-conifer-snow: #e8edf0;
+  --dp-birch: #e9e4d8;
+  --dp-birch-bark: #4a4540;
+  --dp-leaf-spring: #8fae5c;
+  --dp-leaf-summer: #4e7340;
+  --dp-leaf-autumn: #d7622e;
+  --dp-leaf-autumn-gold: #e9a23b;
+  --dp-ground-spring: #7f9b5a;
+  --dp-ground-summer: #5f8a4a;
+  --dp-ground-autumn: #b5873f;
+  --dp-ground-winter: #eef0f2;
+  --dp-rock: #6b6560;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --dp-surface: #14161f;
+    --dp-surface-raised: #1d2030;
+    --dp-surface-sunken: #0e1018;
+    --dp-surface-panel: #14161fe0;
+    --dp-ink: #f3eee4;
+    --dp-ink-muted: #b3aea3;
+    --dp-line: #2e3242;
+    --dp-line-strong: #8b8fa0;
+    --dp-goose-ink: #ffb84a;
+    --dp-goose-body: #f8f3ea;
+    --dp-focus-ring: #8fc1e3;
+    --dp-shadow-raised: 0 1px 2px rgba(0, 0, 0, 0.5), 0 8px 24px rgba(0, 0, 0, 0.35);
+  }
+}

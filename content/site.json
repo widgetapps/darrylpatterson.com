@@ -1,0 +1,58 @@
+{
+  "name": "Darryl Patterson",
+  "url": "https://darrylpatterson.com",
+  "description": "Darryl Patterson makes useful things using AI. Thirty-five years of designing and building for the web, in Sault Ste. Marie, Ontario.",
+  "location": "Sault Ste. Marie, Ontario, Canada",
+  "locationShort": "Sault Ste. Marie · Ontario · Canada",
+  "nav": [
+    { "label": "Home", "href": "/" },
+    { "label": "On AI", "href": "/ai" },
+    { "label": "About", "href": "/about" },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "social": {
+    "github": "https://github.com/widgetapps",
+    "linkedin": "https://www.linkedin.com/in/widgetapps/"
+  },
+  "contact": {
+    "email": "darryl@pattersons.net",
+    "phone": "(416) 786-6116",
+    "phoneHref": "tel:+14167866116",
+    "hours": "Eastern time · I answer email the same day"
+  },
+  "repo": "https://github.com/widgetapps/darrylpatterson.com",
+  "apps": [
+    {
+      "id": "tracktutor",
+      "name": "Track Tutor",
+      "description": "One home for a choir's learning tracks and a mixer for every singer. iPhone and Android apps, used by choruses and quartets, free to start.",
+      "platforms": "Web · iOS · Android",
+      "url": "https://tracktutor.com",
+      "host": "tracktutor.com",
+      "image": {
+        "src": "/apps/tracktutor.png",
+        "alt": "Track Tutor's home page: a choir's learning tracks listed with a mixer for each singer's part",
+        "width": 1200,
+        "height": 750
+      }
+    },
+    {
+      "id": "algomalive",
+      "name": "Algoma Live",
+      "description": "Every live event in the Algoma region in one place. Free to post, no ads, in English, French and Anishinaabemowin, built to WCAG 2.2 AA.",
+      "platforms": "Web · EN · FR · Anishinaabemowin",
+      "url": "https://algomalive.ca",
+      "host": "algomalive.ca",
+      "image": {
+        "src": "/apps/algomalive.png",
+        "alt": "Algoma Live's home page: upcoming live events across the Algoma region, listed by date",
+        "width": 1200,
+        "height": 750
+      }
+    }
+  ],
+  "footer": {
+    "copyright": "Text and photos are mine; see the licence for what you may reuse.",
+    "weatherCredit": "Weather on the home page from Environment and Climate Change Canada."
+  }
+}

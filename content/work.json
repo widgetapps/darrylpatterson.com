@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "onehome",
+    "title": "OneHome launch",
+    "client": "CoreLogic",
+    "role": "UX product design",
+    "when": "2019 to 2020",
+    "image": { "src": "/work/onehome/oh_thumb.png", "alt": "OneHome: a real estate search screen with a map and listings", "width": 400, "height": 300 }
+  },
+  {
+    "slug": "mbna",
+    "title": "MBNA mobile credit card application",
+    "client": "TD Canada Trust",
+    "role": "UX design and prototype",
+    "when": "2015",
+    "image": { "src": "/work/mbna/mbna_thumb.png", "alt": "MBNA mobile credit card application: the start page on a phone", "width": 400, "height": 300 }
+  },
+  {
+    "slug": "dws-iot",
+    "title": "Industrial IoT stack",
+    "client": "Digital Water Solutions",
+    "role": "Engineering and UX design",
+    "when": "2016 to 2021",
+    "image": { "src": "/work/dws-iot/dws_thumb.png", "alt": "Digital Water Solutions IIoT stack: incoming hydrant messages in a queue", "width": 400, "height": 300 }
+  }
+]
