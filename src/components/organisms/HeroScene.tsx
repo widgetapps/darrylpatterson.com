@@ -27,6 +27,7 @@ function scatter(count: number, seed: number, rMin = 1, rMax = 1): Drop[] {
 }
 
 const RAIN = scatter(90, 7);
+const RAIN_FAR = scatter(120, 5, 0.8, 1.4);
 const SNOW_FAR = scatter(70, 11, 1.5, 3);
 const SNOW_NEAR = scatter(14, 23, 7, 12);
 
@@ -204,11 +205,18 @@ export function HeroScene(state: SceneState) {
       {s.night ? <rect x="0" y="250" width="1200" height="270" style={{ fill: "var(--dp-sky-night)", opacity: 0.45 }} /> : null}
 
       {s.rain ? (
-        <FallingTile className="hero-rain" style={{ stroke: "var(--dp-rain)", strokeWidth: 1.5, strokeLinecap: "round", opacity: 0.8 }}>
-          {RAIN.map((d, i) => (
-            <path key={i} d={`M${d.x} ${d.y} l-5 18`} />
-          ))}
-        </FallingTile>
+        <>
+          <FallingTile className="hero-rain-far" style={{ fill: "var(--dp-rain)", opacity: 0.55 }}>
+            {RAIN_FAR.map((d, i) => (
+              <circle key={i} cx={d.x} cy={d.y} r={d.r} />
+            ))}
+          </FallingTile>
+          <FallingTile className="hero-rain" style={{ stroke: "var(--dp-rain)", strokeWidth: 1.5, strokeLinecap: "round", opacity: 0.8 }}>
+            {RAIN.map((d, i) => (
+              <path key={i} d={`M${d.x} ${d.y} l-5 18`} />
+            ))}
+          </FallingTile>
+        </>
       ) : null}
       {s.snow ? (
         <>
