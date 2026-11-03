@@ -34,7 +34,7 @@ Decide the layer before creating a file and record it here.
 | Layer | Files | Rule |
 | --- | --- | --- |
 | atoms | `GooseMark`, `SaultSteMarieMark`, `Icon`, `Button`, `Meta`, `Heading` | one element, no content knowledge |
-| molecules | `AppCard`, `CaseCard`, `PullQuote`, `CtaStrip`, `PhotoStrip`, `FactGrid`, `NavLinks`, `CompanyList`, `MadeIn` | a few atoms with one job; may be client |
+| molecules | `AppCard`, `CaseCard`, `PullQuote`, `CtaStrip`, `PhotoStrip`, `FactGrid`, `NavLinks`, `CompanyList`, `MadeIn`, `CrossfadePhoto` | a few atoms with one job; may be client |
 | organisms | `SiteHeader`, `SiteFooter`, `LivingHero` + `LivingHeroClient` + `HeroScene`, `EvidenceCards`, `OgCard` | a section of a page; may read content |
 | templates | `Page` (`ContentPage`, `ProsePage`, `PageIntro`) | frames that own the `<main>` landmark |
 | pages | `src/app/**/page.tsx`, `not-found.tsx`, `hero-gallery` (dev only) | compose organisms from content |

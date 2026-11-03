@@ -40,7 +40,7 @@ anything merges to `main` (QA-5).
 
 - Server components by default. `"use client"` only for the hero's weather
   repaint, the nav's current-page marker, the company list filter and the
-  cross-fading photo strip (TECH-1).
+  cross-fading photos on About and Home (TECH-1).
 - No raw colours outside `tokens.css`; use the Tailwind utilities
   (`bg-surface`, `text-ink-muted`, `text-h2`) or `var(--dp-*)` in SVG.
 - Copy lives in `content/*.json`, never in components. Sentence case, no

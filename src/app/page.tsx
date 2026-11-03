@@ -1,12 +1,12 @@
-import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { Heading } from "@/components/atoms/Heading";
 import { AppCard } from "@/components/molecules/AppCard";
+import { CrossfadePhoto } from "@/components/molecules/CrossfadePhoto";
 import { CtaStrip } from "@/components/molecules/CtaStrip";
 import { PullQuote } from "@/components/molecules/PullQuote";
 import { LivingHero } from "@/components/organisms/LivingHero";
-import { home, site } from "@/lib/content";
+import { about, home, site } from "@/lib/content";
 
 // Prerendered, and rebuilt hourly so the hero's season stays right (HERO-7).
 export const revalidate = 3600;
@@ -18,6 +18,8 @@ export const metadata: Metadata = {
 };
 
 const section = "mx-auto max-w-content px-4 pt-12 md:px-8 md:pt-16";
+// The portrait cycles through the About pool every 5 to 10 seconds.
+const PORTRAIT_INTERVAL: [number, number] = [5000, 10000];
 
 export default function HomePage() {
   const personLd = {
@@ -76,13 +78,11 @@ export default function HomePage() {
 
       <section aria-labelledby="person" className={section}>
         <div className="grid grid-cols-1 items-center gap-6 md:grid-cols-[320px_minmax(0,1fr)] md:gap-12">
-          <Image
-            src={home.person.photo.src}
-            alt={home.person.photo.alt}
-            width={home.person.photo.width}
-            height={home.person.photo.height}
+          <CrossfadePhoto
+            photos={[home.person.photo, ...about.photos.filter((p) => p.src !== home.person.photo.src)]}
+            intervalMs={PORTRAIT_INTERVAL}
             sizes="320px"
-            className="aspect-square w-full max-w-[320px] rounded-lg object-cover"
+            className="aspect-square w-full max-w-[320px] rounded-lg"
           />
           <div className="flex max-w-prose flex-col gap-4">
             <Heading level={2} id="person">
