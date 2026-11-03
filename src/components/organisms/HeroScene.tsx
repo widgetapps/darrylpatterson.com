@@ -4,11 +4,14 @@
  * season, condition and night. Every colour is a token reference (DSN-10);
  * the scene is decorative (HERO-9) and carries no text (HERO-8).
  */
+import { useId } from "react";
 import { sceneFor, type SceneState } from "@/lib/scene";
 
 export function HeroScene(state: SceneState) {
   const s = sceneFor(state);
   const star = "fill-[var(--dp-moon)]";
+  // Each instance needs its own gradient id, or the first scene on a page paints every sky.
+  const skyId = `hero-sky-${useId().replace(/[^a-zA-Z0-9_-]/g, "")}`;
   return (
     <svg
       viewBox="0 0 1200 520"
@@ -19,12 +22,12 @@ export function HeroScene(state: SceneState) {
       data-testid="hero-scene"
     >
       <defs>
-        <linearGradient id="hero-sky" x1="0" y1="0" x2="0" y2="1">
+        <linearGradient id={skyId} x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" style={{ stopColor: s.skyTop }} />
           <stop offset="1" style={{ stopColor: s.skyBottom }} />
         </linearGradient>
       </defs>
-      <rect x="0" y="0" width="1200" height="520" fill="url(#hero-sky)" />
+      <rect x="0" y="0" width="1200" height="520" fill={`url(#${skyId})`} />
 
       {s.sun ? <circle cx="960" cy="120" r="38" style={{ fill: "var(--dp-sun)" }} /> : null}
       {s.moon ? (
