@@ -1,9 +1,8 @@
 /**
  * Molecule: "Made with love in Sault Ste. Marie", the same sign-off Track
- * Tutor carries. The city's logo is a static SVG in public/ because its brand
- * colours are the city's, not the site's tokens.
+ * Tutor carries.
  */
-import Image from "next/image";
+import { SaultSteMarieMark } from "@/components/atoms/SaultSteMarieMark";
 
 export function MadeIn() {
   return (
@@ -14,7 +13,7 @@ export function MadeIn() {
       </svg>
       <span>in</span>
       <a href="https://saultstemarie.ca/" className="inline-flex min-h-11 items-center gap-1.5">
-        <Image src="/sault-ste-marie.svg" alt="" width={16} height={16} />
+        <SaultSteMarieMark />
         Sault Ste. Marie
       </a>
     </p>

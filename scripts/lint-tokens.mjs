@@ -7,7 +7,9 @@ import { readdirSync, readFileSync, statSync } from "node:fs";
 import { join, relative } from "node:path";
 
 const ROOT = process.cwd();
-const ALLOW = new Set(["src/styles/tokens.css"]);
+// tokens.css holds the site's colours. The city mark holds the City of Sault
+// Ste. Marie's brand colours, which are not ours to tokenize.
+const ALLOW = new Set(["src/styles/tokens.css", "src/components/atoms/SaultSteMarieMark.tsx"]);
 const EXT = new Set([".ts", ".tsx", ".css", ".json", ".mjs"]);
 const PATTERN = /#(?:[0-9a-f]{8}|[0-9a-f]{6}|[0-9a-f]{3,4})\b|\b(?:rgba?|hsla?)\(/gi;
 
