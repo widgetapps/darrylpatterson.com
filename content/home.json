@@ -4,8 +4,14 @@
   "hero": {
     "headline": "Darryl makes useful things using AI.",
     "lead": "Thirty-five years of designing and building for the web, now pointed at the problems worth solving.",
-    "primary": { "label": "See what I have built", "href": "#apps" },
-    "secondary": { "label": "Get in touch", "href": "/contact" }
+    "primary": {
+      "label": "See what I have built",
+      "href": "#apps"
+    },
+    "secondary": {
+      "label": "Get in touch",
+      "href": "/contact"
+    }
   },
   "now": {
     "heading": "What I do now",
@@ -22,17 +28,23 @@
     "heading": "Where I stand on AI",
     "quote": "AI should be used for useful things, not the frivolous.",
     "paragraph": "Its real value is not in demos. It is that useful things can now exist that funding and timelines used to kill. A free, ad-free events calendar in three languages was never going to get built by an agency. A learning-track mixer for choirs with native apps was never going to get venture money. Both exist because one experienced person with AI coding agents could build them in months, not years.",
-    "link": { "label": "Read the whole argument on the On AI page", "href": "/ai" }
+    "link": {
+      "label": "Read the whole argument on the On AI page",
+      "href": "/ai"
+    }
   },
   "person": {
     "heading": "The person",
     "paragraph": "Sault Ste. Marie, Ontario. Sailor, singer, Rotarian, father. Ten years of teaching night classes at Centennial College. I like making small, careful things, which is why the scene at the top of this page changes with the season and the weather outside my window.",
-    "link": { "label": "More about me", "href": "/about" },
+    "link": {
+      "label": "More about me",
+      "href": "/about"
+    },
     "photo": {
-      "src": "/me/darryl_sailor.jpg",
-      "alt": "Darryl at the helm of a sailboat on a grey day, cap and sunglasses on",
-      "width": 365,
-      "height": 365
+      "src": "/me/darryl_ski.jpg",
+      "alt": "Darryl in a knit toque, beard frozen white after a ski, snowbank behind him",
+      "width": 800,
+      "height": 800
     }
   },
   "cta": {

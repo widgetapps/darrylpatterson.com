@@ -3,22 +3,101 @@
   "description": "Equal parts builder, teacher and the guy who ends up running things. Design, engineering, teaching, Rotary, home, family and fun, plus the past work.",
   "lead": "Equal parts builder, teacher and the guy who ends up running things. A childhood fascination with what computers could make has turned into thirty-five years of making it.",
   "photos": [
-    { "src": "/me/darryl_sailor.jpg", "alt": "Darryl at the helm of a sailboat, cap and sunglasses, Lake Ontario behind him", "width": 365, "height": 365 },
-    { "src": "/me/darryl_thisguy.jpg", "alt": "Darryl in a grey cable-knit sweater, pointing at the camera", "width": 800, "height": 800 },
-    { "src": "/me/darryl_viking.jpg", "alt": "Darryl dressed as a viking", "width": 800, "height": 800 },
-    { "src": "/me/darryl_geeq.jpg", "alt": "Darryl at a desk, mid-sentence", "width": 800, "height": 800 },
-    { "src": "/me/darryl_holiday.jpg", "alt": "Darryl at a holiday party", "width": 800, "height": 800 }
+    {
+      "src": "/me/darryl_sailor.jpg",
+      "alt": "Darryl at the helm of a sailboat, cap and sunglasses, Lake Ontario behind him",
+      "width": 365,
+      "height": 365
+    },
+    {
+      "src": "/me/darryl_thisguy.jpg",
+      "alt": "Darryl in a grey cable-knit sweater, pointing at the camera",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "src": "/me/darryl_viking.jpg",
+      "alt": "Darryl dressed as a viking",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "src": "/me/darryl_geeq.jpg",
+      "alt": "Darryl at a desk, mid-sentence",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "src": "/me/darryl_holiday.jpg",
+      "alt": "Darryl at a holiday party",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "src": "/me/darryl_dj.jpg",
+      "alt": "Darryl in amber sunglasses at a mixing desk, running sound for a show",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "src": "/me/darryl_hairmug.jpg",
+      "alt": "Darryl with bed hair, drinking from a mug that says all aflutter with wonder",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "src": "/me/darryl_santa.jpg",
+      "alt": "Darryl as Santa Claus, round glasses and a full white beard",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "src": "/me/darryl_ski.jpg",
+      "alt": "Darryl in a knit toque with a beard frozen white after a ski",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "src": "/me/darryl_suspicious.jpg",
+      "alt": "Darryl looking sideways at the camera, unconvinced",
+      "width": 800,
+      "height": 800
+    }
   ],
-  "caption": "Real photos, none of them staged, one of them a viking.",
+  "caption": "Real photos, none of them staged. One viking, one Santa, one frozen beard.",
   "facts": [
-    { "heading": "Design", "text": "User experience since before it had the name. Information architecture, research, wireframes, prototypes, design systems. I have designed for banks, museums, real estate platforms and a smart fire hydrant." },
-    { "heading": "Engineering", "text": "On the web since 1993. APIs and schemas, Node and PHP, React and Next, queues and telemetry pipelines, cloud on both big providers. I still like the back end best, and I still read every line." },
-    { "heading": "Teaching", "text": "Ten years of night classes at Centennial College, teaching web design and development to people with day jobs. The best way to learn whether you understand something." },
-    { "heading": "Leading", "text": "Department head, VP Digital, team lead. Trust, mentorship, honest process. I have worked with 148 companies and brands, mostly from the inside of an agency." },
-    { "heading": "Rotary", "text": "Past President, Rotary Club of Sault Ste. Marie, 2025/2026. Service above self, and a good excuse to meet everyone in town." },
-    { "heading": "Home", "text": "Sault Ste. Marie, Ontario, on the river between two Great Lakes. By day I am the IT Specialist at Soo Mill, which keeps me close to how a business actually runs, which is where the useful problems are." },
-    { "heading": "Family", "text": "Husband and father. The people who put up with the late nights and the side projects, and who tell me when something is not as good as I think it is." },
-    { "heading": "Fun", "text": "Sailing when the lake allows it. Singing in a chorus, which is where Track Tutor came from. The occasional viking." }
+    {
+      "heading": "Design",
+      "text": "User experience since before it had the name. Information architecture, research, wireframes, prototypes, design systems. I have designed for banks, museums, real estate platforms and a smart fire hydrant."
+    },
+    {
+      "heading": "Engineering",
+      "text": "On the web since 1993. APIs and schemas, Node and PHP, React and Next, queues and telemetry pipelines, cloud on both big providers. I still like the back end best, and I still read every line."
+    },
+    {
+      "heading": "Teaching",
+      "text": "Ten years of night classes at Centennial College, teaching web design and development to people with day jobs. The best way to learn whether you understand something."
+    },
+    {
+      "heading": "Leading",
+      "text": "Department head, VP Digital, team lead. Trust, mentorship, honest process. I have worked with 148 companies and brands, mostly from the inside of an agency."
+    },
+    {
+      "heading": "Rotary",
+      "text": "Past President, Rotary Club of Sault Ste. Marie, 2025/2026. Service above self, and a good excuse to meet everyone in town."
+    },
+    {
+      "heading": "Home",
+      "text": "Sault Ste. Marie, Ontario, on the river between two Great Lakes. By day I am the IT Specialist at Soo Mill, which keeps me close to how a business actually runs, which is where the useful problems are."
+    },
+    {
+      "heading": "Family",
+      "text": "Husband and father. The people who put up with the late nights and the side projects, and who tell me when something is not as good as I think it is."
+    },
+    {
+      "heading": "Fun",
+      "text": "Sailing when the lake allows it. Singing in a chorus, which is where Track Tutor came from. The occasional viking."
+    }
   ],
   "license": {
     "heading": "Licence",
@@ -38,6 +117,9 @@
     "casesHeading": "Three case studies",
     "listHeading": "148 companies and brands",
     "listNote": "Worked together somewhere in this list?",
-    "listNoteLink": { "label": "Say hello", "href": "/contact" }
+    "listNoteLink": {
+      "label": "Say hello",
+      "href": "/contact"
+    }
   }
 }
