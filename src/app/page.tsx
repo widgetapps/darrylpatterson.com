@@ -109,9 +109,8 @@ export default function HomePage() {
                 <Icon name="mail" size={24} />
                 Email me
               </ButtonLink>
-              <ButtonLink href={site.contact.phoneHref} variant="secondary">
-                <Icon name="phone" size={24} />
-                Call me
+              <ButtonLink href="/contact" variant="secondary">
+                Get in touch
               </ButtonLink>
             </>
           }
