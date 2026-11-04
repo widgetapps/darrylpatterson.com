@@ -64,27 +64,27 @@
       "height": 800
     }
   ],
-  "caption": "Real photos, none of them staged. One viking, one Santa, one frozen beard.",
+  "caption": "Real photos, none of them staged.",
   "facts": [
     {
       "heading": "Design",
-      "text": "User experience since before it had the name. Information architecture, research, wireframes, prototypes, design systems. I have designed for banks, museums, real estate platforms and a smart fire hydrant."
+      "text": "User experience since before it had the name. Information architecture, research, wireframes, prototypes, design systems. I have designed for banks, museums, real estate platforms and smart municipal water systems."
     },
     {
       "heading": "Engineering",
-      "text": "On the web since 1993. APIs and schemas, Node and PHP, React and Next, queues and telemetry pipelines, cloud on both big providers. I still like the back end best, and I still read every line."
+      "text": "On the web since 1993. APIs and schemas, Node and PHP, React and Next, queues and telemetry pipelines, cloud on all big providers. I still like the back end best, and I still read every line."
     },
     {
       "heading": "Teaching",
-      "text": "Ten years of night classes at Centennial College, teaching web design and development to people with day jobs. The best way to learn whether you understand something."
+      "text": "Ten years of teaching tech at Centennial College, teaching web design and development to people with day jobs. The best way to learn whether you understand something."
     },
     {
       "heading": "Leading",
-      "text": "Department head, VP Digital, team lead. Trust, mentorship, honest process. I have worked with 148 companies and brands, mostly from the inside of an agency."
+      "text": "Department head, VP Digital, team lead. Trust, mentorship, honest process. I have worked with over 140 companies and brands, mostly from the inside of an agency."
     },
     {
       "heading": "Rotary",
-      "text": "Past President, Rotary Club of Sault Ste. Marie, 2025/2026. Service above self, and a good excuse to meet everyone in town."
+      "text": "Past President, Rotary Club of Sault Ste. Marie, 2025/2026. 7070 Assistant District Governor 2014-2017. Technology Chair for the 2018 RI Convention in Toronto. Service above self, and a good excuse to meet everyone in town."
     },
     {
       "heading": "Home",
@@ -92,11 +92,11 @@
     },
     {
       "heading": "Family",
-      "text": "Husband and father. The people who put up with the late nights and the side projects, and who tell me when something is not as good as I think it is."
+      "text": "Husband, father, and grandfather. The people who put up with the late nights and the side projects, and who tell me when something is not as good as I think it is."
     },
     {
       "heading": "Fun",
-      "text": "Sailing when the lake allows it. Singing in a chorus, which is where Track Tutor came from. The occasional viking."
+      "text": "Sailing when the lake allows it. Singing in a barbershop chorus, which is where Track Tutor came from. Active in community theatre, another good excuse to meet everyone in town."
     }
   ],
   "license": {
@@ -109,7 +109,7 @@
   },
   "hello": {
     "heading": "Say hello",
-    "text": "Old colleague, fellow Rotarian, singer or someone with a problem worth solving: I would like to hear from you."
+    "text": "Old colleague, fellow Rotarian, singer or someone with a problem worth solving: I would love to hear from you."
   },
   "work": {
     "heading": "Past work",

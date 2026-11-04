@@ -16,26 +16,26 @@
   "now": {
     "heading": "What I do now",
     "paragraphs": [
-      "I started coding in grade six on a Commodore PET and got onto the web in 1993. Since then I have been the information architect, the UX designer, the back-end and front-end developer, the sysadmin, the department head and the night-school teacher.",
-      "These days I use AI coding agents to build things that would never have been built otherwise. I review, test and own every line."
+      "I started coding in grade six on a Commodore PET and got onto the web in 1993. Since then I have been the information architect, the UX designer, the back-end and front-end developer, the sysadmin, the department head and the college teacher.",
+      "Recently, I've discovered that I have a very particular set of skills. Skills I have acquired over a very long career. Skills that make me very good at using AI to build things that would never have been built otherwise."
     ]
   },
   "built": {
-    "heading": "Two things I built",
+    "heading": "Two things I built... so far",
     "note": "Both were designed, built, tested and shipped by me, working with AI coding agents, alongside a day job."
   },
   "stance": {
     "heading": "Where I stand on AI",
-    "quote": "AI should be used for useful things, not the frivolous.",
-    "paragraph": "Its real value is not in demos. It is that useful things can now exist that funding and timelines used to kill. A free, ad-free events calendar in three languages was never going to get built by an agency. A learning-track mixer for choirs with native apps was never going to get venture money. Both exist because one experienced person with AI coding agents could build them in months, not years.",
+    "quote": "AI should mostly be used for useful things, not just the frivolous.",
+    "paragraph": "AI is a very divisive topic. It can truly be a source of so much good, resulting in things like earlier health diagnoses and better climate modelling. But it comes at a cost - sustaining AI needs a lot of power and a lot of cooling. And so much of this is being driven by profit, which inevitably leads to the rampant frivolous use of AI. Giving people a fun easy way to create memes and silly songs so they can be kept engaged and captive to advertising seems like a waste of resources. I believe that AI is both an existential threat to humanity and a path to humanity reaching its full potential. I think it's pretty cool that we get to pick the threat or the potential, simply by choosing how we use and interact with AI.",
     "link": {
-      "label": "Read the whole argument on the On AI page",
+      "label": "Read more on my views of AI",
       "href": "/ai"
     }
   },
   "person": {
     "heading": "The person",
-    "paragraph": "Sault Ste. Marie, Ontario. Sailor, singer, Rotarian, father. Ten years of teaching night classes at Centennial College. I like making small, careful things, which is why the scene at the top of this page changes with the season and the weather outside my window.",
+    "paragraph": "Born and raised in the Sault. 30 years in Toronto building a career and raising a family. Ten years teaching tech at Centennial College. Sailor, singer, Rotarian, father, sound guy. I like making useful things.",
     "link": {
       "label": "More about me",
       "href": "/about"
@@ -49,6 +49,6 @@
   },
   "cta": {
     "heading": "Have a problem worth solving?",
-    "text": "Tell me about it. If I can help, I will say how. If I cannot, I will say who might."
+    "text": "Tell me about it. If I can help, I will. If I can't, I'll help you find someone who can."
   }
 }

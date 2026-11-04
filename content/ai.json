@@ -1,15 +1,23 @@
 {
   "title": "On AI",
-  "description": "AI should be used for useful things, not frivolous ones. And it lets useful things exist that funding and timelines used to kill. An essay by Darryl Patterson.",
+  "description": "AI is both an existential threat and a path to humanity reaching its full potential, and we pick which by how we use it. Darryl Patterson on using AI for useful things, not just the frivolous.",
   "meta": "Essay · Sault Ste. Marie · 2026",
-  "lead": "AI should be used for useful things, not frivolous ones. And it lets useful things exist that funding and timelines used to kill.",
+  "lead": "AI should mostly be used for useful things, not just the frivolous. It is both a threat and a path to our full potential, and we get to pick which, simply by choosing how we use it.",
   "sections": [
     {
       "id": "waves",
       "heading": "The waves I have seen",
       "paragraphs": [
         "I got onto the web in 1993, when a page was a text file and a form was an event. I was there for the first browsers, the first content management systems, the first mobile sites, the cloud and the app stores. Each wave came with the same two crowds: the ones who said it would change everything, and the ones who said it was a toy.",
-        "Both were usually wrong in the same way. The tools changed. What good work looked like did not."
+        "Both were usually wrong in the same way. The tools changed. What good work looked like did not. This wave is the first one where I think the stakes on both sides are real."
+      ]
+    },
+    {
+      "id": "divisive",
+      "heading": "The threat and the potential",
+      "paragraphs": [
+        "AI is a very divisive topic, and I think both sides have a point. It can truly be a source of so much good: earlier health diagnoses, better climate modelling, software for people who could never have paid to have it built. It also comes at a cost. Sustaining it takes a lot of power and a lot of cooling, and so much of it is being driven by profit.",
+        "Profit, left to itself, leads to the frivolous. Giving people a fun, easy way to make memes and silly songs so they stay engaged and captive to advertising is a waste of those resources. I believe AI is both an existential threat to humanity and a path to humanity reaching its full potential. The part I find pretty cool is that we get to pick the threat or the potential, simply by choosing how we use it and how we interact with it."
       ]
     },
     {
@@ -31,9 +39,9 @@
     {
       "id": "useful",
       "heading": "Useful versus frivolous",
-      "quote": "AI should be used for useful things, not the frivolous.",
+      "quote": "AI should mostly be used for useful things, not just the frivolous.",
       "paragraphs": [
-        "A thing is useful when it solves a problem someone actually has, for people who would otherwise go without. It is frivolous when its main purpose is to be seen using AI. I am not interested in the second kind, and I think most people can tell the difference within a minute of using something."
+        "A thing is useful when it solves a problem someone actually has, for people who would otherwise go without. It is frivolous when its main purpose is to be seen using AI, or to keep someone scrolling. I say mostly because I am not against fun. A silly song for a friend's birthday is fine. A business built on keeping millions of people making them, given what each one costs to run, is not. Most people can tell the difference within a minute of using something."
       ]
     },
     {
@@ -47,7 +55,7 @@
       "id": "evidence",
       "heading": "The evidence",
       "paragraphs": [
-        "Two things I built this way, working with AI coding agents, alongside a day job. I designed them, reviewed every line, tested them and shipped them."
+        "Two things I have built this way so far, working with AI coding agents, alongside a day job. I designed them, reviewed every line, tested them and shipped them."
       ],
       "evidence": true
     },
@@ -55,13 +63,13 @@
       "id": "method",
       "heading": "How I work with it",
       "paragraphs": [
-        "I write the requirements first, with IDs, and the tests that prove them. The agent builds against those. I read the diff like I would read a junior developer's, except faster and with less patience. Anything that touches data, money or accessibility gets a second look by hand. The commit carries the requirement it serves, so a year from now I can tell why a line exists.",
-        "That is the whole method. It is not clever. It is the same discipline I taught at night school for ten years, with a much faster pair of hands."
+        "I write the requirements with AI first, with IDs, and the tests that prove them. The agent builds against those. I read the diff like I would read a junior developer's, except faster and with less patience. Anything that touches data, money or accessibility gets a second look by hand. The commit carries the requirement it serves, so a year from now I can tell why a line exists.",
+        "That is the whole method. It is not clever. It is the same discipline I taught at Centennial College for ten years, with a much faster pair of hands."
       ]
     }
   ],
   "cta": {
-    "heading": "Disagree? Have a problem like these?",
-    "text": "Either way, I would like to hear it."
+    "heading": "Disagree? Have a problem worth solving?",
+    "text": "Either way, I would love to hear from you."
   }
 }
