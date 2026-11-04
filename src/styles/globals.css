@@ -184,6 +184,10 @@
 .hero-snow-near { animation: dp-fall 6s linear infinite; }
 .hero-bolt { animation: dp-flash 14s linear infinite; }
 
+/* The scene stays invisible until the weather answers, then fades in (HERO-7). */
+.hero-reveal { opacity: 0; transition: opacity 600ms ease-out; }
+[data-ready="true"] > .hero-reveal { opacity: 1; }
+
 /* About photo strip: the incoming photo fades over the current one. */
 @keyframes dp-fade-in {
   from { opacity: 0; }
@@ -197,5 +201,8 @@
   }
   .photo-fade-in {
     animation: none;
+  }
+  .hero-reveal {
+    transition: none;
   }
 }

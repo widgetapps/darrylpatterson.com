@@ -56,7 +56,9 @@ anything merges to `main` (QA-5).
 ## The living hero
 
 `LivingHero` (server) draws the current season under a clear sky; the client
-half asks `/api/weather` once and repaints. The route reads Vercel's
+half keeps the scene hidden until `/api/weather` answers (or four seconds
+pass), fades it in with the live state, and asks again every minute while
+the tab is visible. The route reads Vercel's
 `x-vercel-ip-latitude` and `x-vercel-ip-longitude` headers, picks the nearest
 Environment Canada city page inside the Algoma District (Sault Ste. Marie for
 everyone else), caches each station for ten minutes and stores nothing about

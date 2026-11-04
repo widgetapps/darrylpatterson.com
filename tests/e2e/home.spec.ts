@@ -34,12 +34,50 @@ test("the hero repaints from the weather API", async ({ page }) => {
   await expect(page.getByTestId("hero-scene").locator("text")).toHaveCount(0);
 });
 
+test("the hero scene stays hidden until the weather answers, then fades in", async ({ page }) => {
+  let answer: (() => void) | undefined;
+  const held = new Promise<void>((resolve) => (answer = resolve));
+  await page.route("**/api/weather", async (route) => {
+    await held;
+    await route.fulfill({ status: 200, contentType: "application/json", body: JSON.stringify({ ok: true, season: "summer", condition: "rain", night: false }) });
+  });
+  await page.goto("/");
+  const hero = page.getByTestId("living-hero");
+  const scene = hero.locator(".hero-reveal");
+  await expect(hero).toHaveAttribute("data-ready", "false");
+  await expect(scene).toHaveCSS("opacity", "0");
+  // The headline is live text and never waits for the weather (HERO-1).
+  await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+  answer?.();
+  await expect(hero).toHaveAttribute("data-ready", "true");
+  await expect(hero).toHaveAttribute("data-condition", "rain");
+  await expect(scene).toHaveCSS("opacity", "1");
+});
+
+test("the hero asks the weather again every minute", async ({ page }) => {
+  let calls = 0;
+  await page.route("**/api/weather", (route) => {
+    calls += 1;
+    const condition = calls === 1 ? "clear" : "snow";
+    return route.fulfill({ status: 200, contentType: "application/json", body: JSON.stringify({ ok: true, season: "winter", condition, night: false }) });
+  });
+  await page.clock.install();
+  await page.goto("/");
+  const hero = page.getByTestId("living-hero");
+  await expect(hero).toHaveAttribute("data-condition", "clear");
+  expect(calls).toBe(1);
+  await page.clock.runFor(60_000);
+  await expect(hero).toHaveAttribute("data-condition", "snow");
+  expect(calls).toBe(2);
+});
+
 test("the hero keeps a season scene when the API fails", async ({ page }) => {
   await page.route("**/api/weather", (route) => route.fulfill({ status: 500, body: "down" }));
   await page.goto("/");
   const hero = page.getByTestId("living-hero");
   await expect(hero).toHaveAttribute("data-season", /spring|summer|autumn|winter/);
   await expect(hero).toHaveAttribute("data-condition", "clear");
+  await expect(hero).toHaveAttribute("data-ready", "true");
 });
 
 const seasons = ["spring", "summer", "autumn", "winter"] as const;
